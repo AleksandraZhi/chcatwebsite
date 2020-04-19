@@ -1,22 +1,33 @@
 /*ALL BODY*/
 
 
-/*REUSABLE COMPONENTS*/
+/* REUSABLE COMPONENTS */
 
-/*Very light #FFE2D9
-Light grey #CCB5AD
-Grey #80716C
-Peach #FFA78A */
+/*Very light grey #E3DFDA
+Light grey #BDB9B5
+Grey #7D7B78
+Dark Grey #3D3C3B
+Peach #FDF8F2 */
 
-/*BUTTONS*/
+/* BUTTONS */
 
-/*LINKS*/
+/* ICONS */
+
+
+
+/* LINKS */
 
 .navigation-bar a:link,
 .navigation-bar a:active,
 .navigation-bar a:visited {
-  color: #FFE2D9;
+  color: #FDF8F2;
   text-decoration: none;
+}
+
+.section-novels a:link,
+.section-novels a:active,
+.section-novels a:visited {
+  color: #000;
 }
 
 .navigation-bar a:hover {
@@ -24,7 +35,7 @@ Peach #FFA78A */
   transition: color 0.2s
 }
 
-/*HEADER*/
+/* SECTION HEADER */
 
 header {
     background-image:linear-gradient(rgba(56, 54, 54, 0.7), rgba(56, 54, 54, 0.7)), url(../images/img-header.jpeg);
@@ -67,4 +78,11 @@ header h2 {
   font-family: 'EB Garamond', serif;
   font-weight: : 600;
   color: #CCB5AD;
+}
+
+/* SECTION NOVELS */
+
+.section-novels {
+  background-color: #FDF8F2;
+  height: 30rem;
 }

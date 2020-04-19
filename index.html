@@ -10,6 +10,9 @@
     <!-- Font styles -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,600&family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
 
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -17,7 +20,8 @@
   </head>
   <body>
 
-  <div class="container-fluid">
+  <div class="container">
+
     <header class="container">
         <nav class="row section-navigation">
           <div class="col">
@@ -46,27 +50,35 @@
     <section class="container section-novels">
 
       <!-- first row of icons -->
-          <div class="row">
+          <div class="row novels-1">
             <div class="col">
-              <a href="#"><i class="fas fa-star">Рокзвезда</i></a>
-            </div>
-            <div class="col">
-              <a href="#"><i class="fas fa-skull">Мертвый Город</i></a>
-            </div>
-            <div class="col">
-              <a href="#"><i class="fas fa-moon">Первый Вампир</i></a>
+              <div class="row">
+                <div class="col-4"><i class="fas fa-star"></i></div>
+                <div class="col-4"><i class="fas fa-skull"></i></div>
+                <div class="col-4"><i class="fas fa-moon"></i></div>
+              </div>
+              <div class="row">
+                <div class="col-4"><a href="#">Рокзвезда</a></div>
+                <div class="col-4"><a href="#">Мертвый Город</a></div>
+                <div class="col-4"><a href="#">Первый Вампир</a></div>
+              </div>
             </div>
           </div>
 
       <!-- second row of icons -->
-          <div class="row">
+          <div class="row novels-2">
             <div class="col">
-              <a href="#"><i class="fas fa-heart-broken">Серия Разбитые Сердца</i></a>
-            </div>
-            <div class="col">
-              <a href="#"><i class="fas fa-mask">Серия Герои Меча и Магии</i></a>
+              <div class="row">
+                <div class="col-6"><i class="fas fa-heart"></i></i></div>
+                <div class="col-6"><i class="fas fa-mask"></i></div>
+              </div>
+              <div class="row">
+                <div class="col-6"><a href="#">Серия Разбитые Сердца</a></div>
+                <div class="col-6"><a href="#">Серия Герои Меча и Магии</a></div>
+              </div>
             </div>
           </div>
+
     </section>
 
 <!--
@@ -101,7 +113,7 @@
       </footer>
 -->
 
-    </div>
+  </div>
 
   <!-- JavaScripts -->
   </body>
