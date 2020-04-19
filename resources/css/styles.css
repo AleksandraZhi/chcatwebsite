@@ -31,6 +31,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 15rem;
+    width: 100%;
     background-attachment: fixed;
 }
 
@@ -47,7 +48,7 @@ header {
 }
 
 .navigation-bar:last-child {
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
 
 header h1,
@@ -60,7 +61,7 @@ header h1 {
   font-family: 'EB Garamond', serif;
   font-weight: : 700;
   color: #FFE2D9;
-  padding-top: 6rem;
+  margin-top: 2rem;
 }
 
 header h2 {
