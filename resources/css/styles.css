@@ -11,7 +11,8 @@
 Light grey #BDB9B5
 Grey #7D7B78
 Dark Grey #3D3C3B
-Peach #FDF8F2 */
+Peach #FDF8F2
+Dark Grey Peach #CCB5AD */
 
 /* BUTTONS */
 
@@ -36,7 +37,14 @@ i {
 
 .navigation-bar a:hover {
   color: #CCB5AD;
-  transition: color 0.2s;
+  transition: color 0.3s;
+}
+
+.main-title a:hover,
+.main-title h1:hover {
+  text-decoration: none;
+  color: #CCB5AD;
+  transition: color 0.3s
 }
 
 .section-novels a:link,
@@ -81,21 +89,19 @@ header {
 
 header h1,
 header h2 {
-  font-style: italic;
-  text-align: center;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    color: #FDF8F2;
 }
 
 header h1 {
-  font-family: 'EB Garamond', serif;
-  font-weight: : 700;
-  color: #FDF8F2;
+  font-style: italic;
+  font-weight: 700;
   margin-top: 5rem;
 }
 
 header h2 {
-  font-family: 'EB Garamond', serif;
-  font-weight: : 600;
-  color: #FDF8F2;
+  font-weight: 300;
 }
 
 /* SECTION NOVELS */
@@ -104,10 +110,29 @@ header h2 {
   background-color: #E3DFDA;
 }
 
+.title-novels {
+  text-align: center;
+}
+
+.title-novels h2 {
+  border-bottom: 2px solid #CCB5AD;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .section-novels h3 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.section-novels h3,
+.section-novels h2 {
   color: #3D3C3B;
-  font-size: 150%;
   font-family: 'EB Garamond', serif;
+}
+
+.title-novels {
+  padding: 7%;
 }
 
 .rockstar,
@@ -119,7 +144,10 @@ header h2 {
   padding: 1.5%;
 }
 
-.section-novels-1 col,
-.section-novels-2 col {
-  padding: 7% 10%;
+/*.section-novels-1:first-child {
+  padding-top: 1%;
+}*/
+
+.section-novels .row:last-child {
+  padding-bottom: 5%;
 }
