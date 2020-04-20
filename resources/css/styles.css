@@ -1,9 +1,12 @@
-/*ALL BODY*/
+/*------------------------------*/
+/* BASIC SETUP */
+/*------------------------------*/
 
-.container-fluid {
-  width: 100%;
-  margin-left: -15px;
+* {
+    margin: 0;
+    padding: 0;
 }
+
 
 /* REUSABLE COMPONENTS */
 
@@ -31,13 +34,14 @@ i {
 .navigation-bar a:link,
 .navigation-bar a:active,
 .navigation-bar a:visited {
-  color: #FDF8F2;
+  color: #BDB9B5;
   text-decoration: none;
 }
 
 .navigation-bar a:hover {
   color: #CCB5AD;
-  transition: color 0.3s;
+  font-weight: bolder;
+  transition: color 0.3s, font-weight 0.3s;
 }
 
 .main-title a:hover,
@@ -74,6 +78,7 @@ header {
 .navigation-bar {
     list-style: none;
     font-family: "Inter", sans-serif;
+    text-transform: uppercase;
     float: right;
     margin-top: 1rem;
 }
@@ -132,7 +137,7 @@ header h2 {
 }
 
 .title-novels {
-  padding: 7%;
+  padding: 7% 0;
 }
 
 .rockstar,
