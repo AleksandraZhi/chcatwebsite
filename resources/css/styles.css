@@ -2,10 +2,10 @@
 /* BASIC SETUP */
 /*------------------------------*/
 
-* {
+/** {
     margin: 0;
     padding: 0;
-}
+}*/
 
 
 /* REUSABLE COMPONENTS */
@@ -73,10 +73,22 @@ Dark Grey Peach #CCB5AD */
 
 i {
   font-size: 300%;
-  color: #3D3C3B;
-  border: 2px solid #3D3C3B;
   padding: 5%;
   border-radius: 10%;
+}
+
+.section-novels i {
+  color: #3D3C3B;
+  border: 2px solid #3D3C3B;
+}
+
+.section-shorts i {
+  color: #FDF8F2;
+  border: 2px solid #FDF8F2;
+}
+
+.divided i {
+  padding: 6% 10%;
 }
 
 /* LINKS */
