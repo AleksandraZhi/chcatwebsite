@@ -17,6 +17,56 @@ Dark Grey #3D3C3B
 Peach #FDF8F2
 Dark Grey Peach #CCB5AD */
 
+.title-novels,
+.title-shorts {
+  text-align: center;
+}
+
+.title-novels h2,
+.title-shorts h2 {
+  border-bottom: 2px solid #CCB5AD;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-novels h3,
+.section-shorts h3 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.section-novels h3,
+.section-novels h2,
+.section-shorts h3,
+.section-shorts h2 {
+  font-family: 'EB Garamond', serif;
+}
+
+.title-novels,
+.title-shorts {
+  padding: 7% 0;
+}
+
+.rockstar,
+.broken-hearts,
+.dead-city,
+.first-vampire,
+.heroes,
+.rain-riga,
+.key-heart,
+.end-world,
+.when-walk,
+.divided,
+.it-in-corner {
+  text-align: center;
+  padding: 1.5%;
+}
+
+.section-novels .row:last-child,
+.section-shorts .row:last-child {
+  padding-bottom: 5%;
+}
+
 /* BUTTONS */
 
 /* ICONS */
@@ -115,44 +165,18 @@ header h2 {
   background-color: #E3DFDA;
 }
 
-.title-novels {
-  text-align: center;
-}
-
-.title-novels h2 {
-  border-bottom: 2px solid #CCB5AD;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.section-novels h3 {
-    font-size: 100%;
-    font-weight: bold;
-}
-
 .section-novels h3,
 .section-novels h2 {
   color: #3D3C3B;
-  font-family: 'EB Garamond', serif;
 }
 
-.title-novels {
-  padding: 7% 0;
+/* SECTION SHORT STORIES */
+
+.section-shorts {
+  background-color: #3D3C3B;
 }
 
-.rockstar,
-.broken-hearts,
-.dead-city,
-.first-vampire,
-.heroes {
-  text-align: center;
-  padding: 1.5%;
-}
-
-/*.section-novels-1:first-child {
-  padding-top: 1%;
-}*/
-
-.section-novels .row:last-child {
-  padding-bottom: 5%;
+.section-shorts h3,
+.section-shorts h2 {
+  color: #FDF8F2;
 }
