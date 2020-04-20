@@ -1,5 +1,9 @@
 /*ALL BODY*/
 
+.container-fluid {
+  width: 100%;
+  margin-left: -15px;
+}
 
 /* REUSABLE COMPONENTS */
 
@@ -13,7 +17,13 @@ Peach #FDF8F2 */
 
 /* ICONS */
 
-
+i {
+  font-size: 300%;
+  color: #3D3C3B;
+  border: 2px solid #3D3C3B;
+  padding: 5%;
+  border-radius: 10%;
+}
 
 /* LINKS */
 
@@ -24,15 +34,23 @@ Peach #FDF8F2 */
   text-decoration: none;
 }
 
+.navigation-bar a:hover {
+  color: #CCB5AD;
+  transition: color 0.2s;
+}
+
 .section-novels a:link,
 .section-novels a:active,
 .section-novels a:visited {
   color: #000;
 }
 
-.navigation-bar a:hover {
-  color: #CCB5AD;
-  transition: color 0.2s
+.section-novels h3:hover,
+.section-novels a:hover,
+.section-novels i:hover {
+  text-decoration: none;
+  color: #7D7B78;
+  transition:  color 0.3s;
 }
 
 /* SECTION HEADER */
@@ -70,19 +88,38 @@ header h2 {
 header h1 {
   font-family: 'EB Garamond', serif;
   font-weight: : 700;
-  color: #FFE2D9;
+  color: #FDF8F2;
   margin-top: 5rem;
 }
 
 header h2 {
   font-family: 'EB Garamond', serif;
   font-weight: : 600;
-  color: #CCB5AD;
+  color: #FDF8F2;
 }
 
 /* SECTION NOVELS */
 
 .section-novels {
-  background-color: #FDF8F2;
-  height: 30rem;
+  background-color: #E3DFDA;
+}
+
+.section-novels h3 {
+  color: #3D3C3B;
+  font-size: 150%;
+  font-family: 'EB Garamond', serif;
+}
+
+.rockstar,
+.broken-hearts,
+.dead-city,
+.first-vampire,
+.heroes {
+  text-align: center;
+  padding: 1.5%;
+}
+
+.section-novels-1 col,
+.section-novels-2 col {
+  padding: 7% 10%;
 }
