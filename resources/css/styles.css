@@ -222,7 +222,19 @@ header h2 {
 /* SECTION POETRY */
 
 .section-poetry p {
-  border: 2px solid #FDF8F2;
+  border: 2px solid #CCB5AD;
+  height: 100%;
   border-radius: 5%;
-  padding: 2%;
+  padding: 7%;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+}
+
+.section-poetry-row {
+  padding: 0 3%;
+  padding-bottom: 3%;
+}
+
+.section-poetry-row:last-child {
+  padding-bottom: 5%;
 }
