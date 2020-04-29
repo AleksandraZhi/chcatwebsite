@@ -75,7 +75,8 @@ Dark Grey Peach #CCB5AD */
 }
 
 .section-novels .row:last-child,
-.section-shorts .row:last-child {
+.section-shorts .row:last-child,
+.section-inspired {
   padding-bottom: 5%;
 }
 
