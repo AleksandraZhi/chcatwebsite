@@ -18,19 +18,22 @@ Peach #FDF8F2
 Dark Grey Peach #CCB5AD */
 
 .title-novels,
-.title-shorts {
+.title-shorts,
+.title-inspired {
   text-align: center;
 }
 
 .title-novels h2,
-.title-shorts h2 {
+.title-shorts h2,
+.title-inspired h2 {
   border-bottom: 2px solid #CCB5AD;
   text-align: center;
   text-transform: uppercase;
 }
 
 .section-novels h3,
-.section-shorts h3 {
+.section-shorts h3,
+.section-inspired h3 {
     font-size: 100%;
     font-weight: bold;
 }
@@ -38,12 +41,15 @@ Dark Grey Peach #CCB5AD */
 .section-novels h3,
 .section-novels h2,
 .section-shorts h3,
-.section-shorts h2 {
+.section-shorts h2,
+.section-inspired h3,
+.section-inspired h2 {
   font-family: 'EB Garamond', serif;
 }
 
 .title-novels,
-.title-shorts {
+.title-shorts,
+.title-inspired {
   padding: 7% 0;
 }
 
@@ -57,7 +63,9 @@ Dark Grey Peach #CCB5AD */
 .end-world,
 .when-walk,
 .divided,
-.it-in-corner {
+.it-in-corner,
+.alice-key,
+.pink-spider {
   text-align: center;
   padding: 1.5%;
 }
@@ -77,7 +85,8 @@ i {
   border-radius: 10%;
 }
 
-.section-novels i {
+.section-novels i,
+.section-inspired i {
   color: #3D3C3B;
   border: 2px solid #3D3C3B;
 }
@@ -115,13 +124,19 @@ i {
 
 .section-novels a:link,
 .section-novels a:active,
-.section-novels a:visited {
+.section-novels a:visited,
+.section-inspired a:link,
+.section-inspired a:active,
+.section-inspired a:visited {
   color: #000;
 }
 
 .section-novels h3:hover,
 .section-novels a:hover,
-.section-novels i:hover {
+.section-novels i:hover,
+.section-inspired h3:hover,
+.section-inspired a:hover,
+.section-inspired i:hover {
   text-decoration: none;
   color: #7D7B78;
   transition:  color 0.3s;
@@ -171,14 +186,17 @@ header h2 {
   font-weight: 300;
 }
 
-/* SECTION NOVELS */
+/* SECTION NOVELS & SECTION INSPIRED BY */
 
-.section-novels {
+.section-novels,
+.section-inspired {
   background-color: #E3DFDA;
 }
 
 .section-novels h3,
-.section-novels h2 {
+.section-novels h2,
+.section-inspired h3,
+.section-inspired h2 {
   color: #3D3C3B;
 }
 
