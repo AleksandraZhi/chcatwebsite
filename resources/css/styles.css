@@ -19,13 +19,15 @@ Dark Grey Peach #CCB5AD */
 
 .title-novels,
 .title-shorts,
-.title-inspired {
+.title-inspired,
+.title-poetry {
   text-align: center;
 }
 
 .title-novels h2,
 .title-shorts h2,
-.title-inspired h2 {
+.title-inspired h2,
+.title-poetry h2 {
   border-bottom: 2px solid #CCB5AD;
   text-align: center;
   text-transform: uppercase;
@@ -43,13 +45,15 @@ Dark Grey Peach #CCB5AD */
 .section-shorts h3,
 .section-shorts h2,
 .section-inspired h3,
-.section-inspired h2 {
+.section-inspired h2,
+.section-poetry h2 {
   font-family: 'EB Garamond', serif;
 }
 
 .title-novels,
 .title-shorts,
-.title-inspired {
+.title-inspired,
+.title-poetry {
   padding: 7% 0;
 }
 
@@ -190,23 +194,35 @@ header h2 {
 
 .section-novels,
 .section-inspired {
-  background-color: #E3DFDA;
+  background-color: #E3DFDA;  /*grey background*/
 }
 
 .section-novels h3,
 .section-novels h2,
 .section-inspired h3,
 .section-inspired h2 {
-  color: #3D3C3B;
+  color: #3D3C3B; /*dark text*/
 }
 
-/* SECTION SHORT STORIES */
+/* SECTION SHORT STORIES & SECTION POETRY */
 
-.section-shorts {
-  background-color: #3D3C3B;
+.section-shorts,
+.section-poetry {
+  background-color: #3D3C3B; /* dark background*/
 }
 
 .section-shorts h3,
-.section-shorts h2 {
-  color: #FDF8F2;
+.section-shorts h2,
+.section-poetry h2,
+.section-poetry p {
+  color: #FDF8F2; /* light text*/
+}
+
+
+/* SECTION POETRY */
+
+.section-poetry p {
+  border: 2px solid #FDF8F2;
+  border-radius: 5%;
+  padding: 2%;
 }
