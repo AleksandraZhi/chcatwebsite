@@ -46,7 +46,8 @@ Dark Grey Peach #CCB5AD */
 .section-shorts h2,
 .section-inspired h3,
 .section-inspired h2,
-.section-poetry h2 {
+.section-poetry h2,
+.section-poetry p {
   font-family: 'EB Garamond', serif;
 }
 
