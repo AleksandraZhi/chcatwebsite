@@ -108,7 +108,7 @@ i {
 
 .section-footer i {
   font-size: 100%;
-  color: #FDF8F2;
+  color: #CCB5AD;
 }
 
 /* LINKS */
@@ -152,6 +152,14 @@ i {
   color: #7D7B78;
   transition:  color 0.3s;
 }
+
+.pink-spider a:hover,
+.pink-spider i:hover,
+.pink-spider a:active,
+.pink-spider i:active {
+  color: #FF789F
+}
+
 
 /* SECTION HEADER */
 
@@ -221,8 +229,7 @@ header h2 {
 .section-shorts h3,
 .section-shorts h2,
 .section-poetry h2,
-.section-poetry p,
-.section-footer {
+.section-poetry p {
   color: #FDF8F2; /* light text*/
 }
 
@@ -251,6 +258,7 @@ header h2 {
 
 .section-footer {
   background-color: #000;
+  color: #CCB5AD;
   padding-top: 3%;
 }
 
