@@ -27,6 +27,7 @@ Dark Grey Peach #CCB5AD */
 .title-novels h2,
 .title-shorts h2,
 .title-inspired h2,
+.title-articles h2,
 .title-poetry h2 {
   border-bottom: 2px solid #CCB5AD;
   text-align: center;
@@ -35,7 +36,7 @@ Dark Grey Peach #CCB5AD */
 
 .section-novels h3,
 .section-shorts h3,
-.section-inspired h3 {
+.section-inspired-articles h3 {
     font-size: 100%;
     font-weight: bold;
 }
@@ -44,8 +45,8 @@ Dark Grey Peach #CCB5AD */
 .section-novels h2,
 .section-shorts h3,
 .section-shorts h2,
-.section-inspired h3,
-.section-inspired h2,
+.section-inspired-articles h3,
+.section-inspired-articles h2,
 .section-poetry h2,
 .section-poetry p {
   font-family: 'EB Garamond', serif;
@@ -54,6 +55,7 @@ Dark Grey Peach #CCB5AD */
 .title-novels,
 .title-shorts,
 .title-inspired,
+.title-articles,
 .title-poetry {
   padding: 7% 0;
 }
@@ -70,14 +72,16 @@ Dark Grey Peach #CCB5AD */
 .divided,
 .it-in-corner,
 .alice-key,
-.pink-spider {
+.pink-spider,
+.article-1,
+.article-2 {
   text-align: center;
   padding: 1.5%;
 }
 
 .section-novels .row:last-child,
 .section-shorts .row:last-child,
-.section-inspired {
+.section-inspired-articles {
   padding-bottom: 5%;
 }
 
@@ -91,8 +95,12 @@ i {
   border-radius: 10%;
 }
 
+.alice-key i {
+  padding: 7%;
+}
+
 .section-novels i,
-.section-inspired i {
+.section-inspired-articles i {
   color: #3D3C3B;
   border: 2px solid #3D3C3B;
 }
@@ -110,6 +118,12 @@ i {
   font-size: 100%;
   color: #CCB5AD;
 }
+
+/*.icon-lj {
+  background-image: url("../vendors/icons/livejournal.png");
+  font-size: 100%;
+  color: #CCB5AD;
+}*/
 
 /* LINKS */
 
@@ -136,28 +150,29 @@ i {
 .section-novels a:link,
 .section-novels a:active,
 .section-novels a:visited,
-.section-inspired a:link,
-.section-inspired a:active,
-.section-inspired a:visited {
+.section-inspired-articles a:link,
+.section-inspired-articles a:active,
+.section-inspired-articles a:visited {
   color: #000;
 }
 
 .section-novels h3:hover,
 .section-novels a:hover,
 .section-novels i:hover,
-.section-inspired h3:hover,
-.section-inspired a:hover,
-.section-inspired i:hover {
+.section-inspired-articles h3:hover,
+.section-inspired-articles a:hover,
+.section-inspired-articles i:hover {
   text-decoration: none;
   color: #7D7B78;
   transition:  color 0.3s;
 }
 
+/*Below on hover changes icon to pink as it's a symbol of the essay*/
 .pink-spider a:hover,
 .pink-spider i:hover,
 .pink-spider a:active,
 .pink-spider i:active {
-  color: #FF789F
+  color: #FF789F;
 }
 
 
@@ -205,21 +220,62 @@ header h2 {
   font-weight: 300;
 }
 
-/* SECTION NOVELS & SECTION INSPIRED BY */
+/* SECTION NOVELS & SECTION INSPIRED&ARTICLES */
 
 .section-novels,
-.section-inspired {
+.section-inspired-articles {
   background-color: #E3DFDA;  /*grey background*/
 }
 
 .section-novels h3,
 .section-novels h2,
-.section-inspired h3,
-.section-inspired h2 {
+.section-inspired-articles h3,
+.section-inspired-articles h2 {
   color: #3D3C3B; /*dark text*/
 }
 
+/*SECTION INSPIRED & ARTICLES*/
+
+.section-articles {
+  margin-left: -5%;
+}
+
+.section-inspired h3,
+.section-articles h3 {
+  text-align: left;
+}
+
+.title-inspired,
+.section-inspired,
+.padding-inspired-articles {
+  border-right: 2px solid #CCB5AD;
+}
+
+.section-inspired-articles {
+  padding-bottom: 0;
+}
+
+/*Below class is only to fix the line issue not extending through bottom padding*/
+.padding-inspired-articles {
+  padding-top: 5%;
+}
+
 /* SECTION SHORT STORIES & SECTION POETRY */
+
+.pink-spider h3,
+.alice-key h3,
+.article-1 h3,
+.article-2 h3 {
+  margin-top: 10%;
+  text-align: left;
+}
+
+.pink-spider,
+.alice-key,
+.article-1,
+.article-2 {
+  text-align: right;
+}
 
 .section-shorts,
 .section-poetry {
@@ -260,9 +316,16 @@ header h2 {
   background-color: #000;
   color: #CCB5AD;
   padding-top: 3%;
+  font-weight: bold;
 }
 
 .section-footer .copyrightstamp {
   text-align: right;
   font-size: 85%;
+  font-weight: normal;
+}
+
+.section-footer i {
+  padding-left: 0;
+  padding-top: 2%;
 }
