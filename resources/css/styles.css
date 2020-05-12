@@ -96,7 +96,7 @@ i {
 }
 
 .alice-key i {
-  padding: 7%;
+  padding: 6%;
 }
 
 .section-novels i,
@@ -179,7 +179,7 @@ i {
 /* SECTION HEADER */
 
 header {
-    background-image:linear-gradient(rgba(56, 54, 54, 0.7), rgba(56, 54, 54, 0.7)), url(../images/img-header.jpeg);
+    background-image:linear-gradient(rgba(56, 54, 54, 0.7), rgba(56, 54, 54, 0.7)), url(../../vendors/images/img-header-md.jpg);
     background-size: cover;
     background-position: center;
     height: 30rem;
