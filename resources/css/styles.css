@@ -87,43 +87,86 @@ Dark Grey Peach #CCB5AD */
 
 /* BUTTONS */
 
+
 /* ICONS */
 
 i {
   font-size: 300%;
-  padding: 5%;
-  border-radius: 10%;
+  padding: 15%;
 }
 
-.alice-key i {
-  padding: 6%;
+.icon-border {
+  border-radius: 15%;
+  margin: 0 30%;
+}
+
+.section-novels .icon-border,
+.section-inspired-articles .icon-border {
+  border: 2px solid #3D3C3B;
+}
+
+.section-shorts .icon-border {
+  border: 2px solid #FDF8F2;
 }
 
 .section-novels i,
 .section-inspired-articles i {
   color: #3D3C3B;
-  border: 2px solid #3D3C3B;
 }
 
 .section-shorts i {
   color: #FDF8F2;
-  border: 2px solid #FDF8F2;
-}
-
-.divided i {
-  padding: 6% 10%;
 }
 
 .section-footer i {
-  font-size: 100%;
+  padding: 0 4% 2% 0;
   color: #CCB5AD;
+  font-size: 1rem;
 }
 
-/*.icon-lj {
-  background-image: url("../vendors/icons/livejournal.png");
-  font-size: 100%;
-  color: #CCB5AD;
-}*/
+
+/* ICON ANIMATIONS */
+
+.rockstar .fa-star:hover {
+  animation-name: rockstarIcon;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rockstarIcon {
+  100% {
+    transform: scale(0.5) rotate(180deg);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  0% {
+    transform: scale(0.9);
+  }
+}
+
+.dead-city .fa-skull {
+  animation-name: skullWink;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  aniimation-iteration-count: infinite;
+}
+
+@keyframes skullWink {
+  0% {
+
+  }
+  100% {
+    
+  }
+}
 
 /* LINKS */
 
@@ -266,7 +309,7 @@ header h2 {
 .alice-key h3,
 .article-1 h3,
 .article-2 h3 {
-  margin-top: 10%;
+  margin: 20% 20% 20% 0;
   text-align: left;
 }
 
@@ -315,7 +358,7 @@ header h2 {
 .section-footer {
   background-color: #000;
   color: #CCB5AD;
-  padding-top: 3%;
+  padding: 3% 0;
   font-weight: bold;
   line-height: 2rem;
 }
@@ -324,9 +367,4 @@ header h2 {
   text-align: right;
   font-size: 85%;
   font-weight: normal;
-}
-
-.section-footer i {
-  padding-left: 0;
-  padding-top: 2%;
 }
