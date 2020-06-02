@@ -152,19 +152,40 @@ i {
   }
 }
 
-.dead-city .fa-skull {
-  animation-name: skullWink;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  aniimation-iteration-count: infinite;
+.dead-city .fa-skull:hover {
+  animation-name: skullShaken;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-@keyframes skullWink {
+@keyframes skullShaken {
   0% {
-
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  60% {
+    transform: rotate(-30deg);
+  }
+  70% {
+    transform: rotate(30deg);
+  }
+  80% {
+    transform: rotate(-30deg);
+  }
+  90% {
+    transform: rotate(30deg);
   }
   100% {
-    
+    transform: rotate(-30deg);
   }
 }
 
