@@ -2,11 +2,13 @@
 /* BASIC SETUP */
 /*------------------------------*/
 
+body {
+  background-color: black;
+}
+
 .row {
   margin-right: 0;
 }
-
-
 
 /* REUSABLE COMPONENTS */
 
@@ -15,8 +17,66 @@ header h1,
 .main-title p,
 .section-novels h2,
 .section-novels h3,
-.section-novels p {
+.section-novels p,
+.section-shorts h2,
+.section-shorts h3,
+.section-shorts p,
+.section-inspired-articles h2,
+.section-inspired-articles h3,
+.section-inspired-articles p {
   color: rgba(206, 177, 143);
+}
+
+.section-novels,
+.section-shorts,
+.section-inspired-articles {
+  padding: 4rem;
+}
+
+.section-novels h3,
+.section-novels p,
+.section-shorts h3,
+.section-shorts p,
+.section-inspired-articles h3,
+.section-inspired-articles p {
+  opacity: 0.9;
+}
+
+.section-novels,
+.section-inspired-articles {
+  background-color: rgba(5, 2, 11, 0.7);
+}
+
+.section-shorts {
+  background-color: rgba(56, 31, 37, 0.3);
+}
+
+.section-novels h2,
+.section-shorts h2,
+.section-inspired-articles h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.section-novels p,
+.section-shorts p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.novel-items {
+  background-color: rgba(56,31,37, 0.3);
+}
+
+.shorts-items {
+  background-color: rgba(56,31,37, 0.3);
+}
+
+.cover-novels p,
+.cover-shorts p {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* BUTTONS */
@@ -48,6 +108,7 @@ header h1,
 
 .link-to {
   color: rgba(153, 170, 138);
+  font-weight: bold;
 }
 
 .link-to:hover,
@@ -130,45 +191,54 @@ header h1:last-child {
 
 /* SECTION NOVELS */
 
-.section-novels {
-  background-color:  rgba(5, 2, 11);
-  text-align: left;
+.section-novels h3 {
+  font-size: 1.3rem;
+  padding-bottom: 0.3rem;
 }
 
-.section-novels-items {
-  padding-top: 3%;
-}
-
-.section-novels h2 {
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 4%;
-  padding-bottom: 2%;
-}
-
-.section-novels h3,
-.section-novels p {
-  opacity: 0.8;
-}
-
-.cover-novels {
-  background-image: linear-gradient(rgba(5, 2, 11, 0.7), rgba(5, 2, 11, 0.7)), url(../../vendors/images/img-typewriter-green.jpg);
-  background-size: cover;
+.novel-items {
   height: 20rem;
-  width: 15rem;
-  padding: 0 5%;
+  padding: 1.7rem;
+  margin-top: 1.2rem;
+  /*border: 1px solid white;*/
 }
 
 .cover-novels p {
-  color: rgba(206, 177, 143, 0.7);
-  text-transform: uppercase;
+  font-size: 1rem;
+  padding-top: 7rem;
 }
+
+.cover-novels {
+  background-image: linear-gradient(rgba(5, 2, 11, 0.3), rgba(5, 2, 11, 0.3)), url(../../vendors/images/img-typewriter-green.jpg);
+  background-size: cover;
+}
+
 
 /* SECTION SHORT STORIES */
 
 .cover-shorts {
   background-image: linear-gradient(rgba(5, 2, 11, 0.7), rgba(5, 2, 11, 0.7)), url(../../vendors/images/img-book.jpg);
   background-size: cover;
+}
+
+.shorts-items {
+  height: 13rem;
+  margin: 0.5rem 0;
+  padding: 1.2rem;
+}
+
+.section-shorts h3 {
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+
+/*.shorts-items p {
+  padding: 0.7rem;
+}*/
+
+.cover-shorts p {
+  padding-top: 5rem;
+  font-size: 0.8rem;
 }
 
 /* SECTION INSPIRED AND ARTICLES */
