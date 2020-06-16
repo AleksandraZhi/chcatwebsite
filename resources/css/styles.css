@@ -23,13 +23,16 @@ header h1,
 .section-shorts p,
 .section-inspired-articles h2,
 .section-inspired-articles h3,
-.section-inspired-articles p {
+.section-inspired-articles i,
+.section-poetry h2,
+.section-poetry p {
   color: rgba(206, 177, 143);
 }
 
 .section-novels,
 .section-shorts,
-.section-inspired-articles {
+.section-inspired-articles,
+.section-poetry {
   padding: 4rem;
 }
 
@@ -38,7 +41,9 @@ header h1,
 .section-shorts h3,
 .section-shorts p,
 .section-inspired-articles h3,
-.section-inspired-articles p {
+.section-inspired-articles i,
+.section-poetry h2,
+.section-poetry p {
   opacity: 0.9;
 }
 
@@ -47,13 +52,15 @@ header h1,
   background-color: rgba(5, 2, 11, 0.7);
 }
 
-.section-shorts {
+.section-shorts,
+.section-poetry {
   background-color: rgba(56, 31, 37, 0.3);
 }
 
 .section-novels h2,
 .section-shorts h2,
-.section-inspired-articles h2 {
+.section-inspired-articles h2,
+.section-poetry h2 {
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 4%;
@@ -65,7 +72,9 @@ header h1,
   text-align: justify;
 }
 
-.novel-items {
+.novel-items,
+.articles-items,
+.inspired-items {
   background-color: rgba(56,31,37, 0.3);
 }
 
@@ -84,8 +93,17 @@ header h1,
 
 /* ICONS */
 
+.inspired-articles-items i {
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 5rem;
+}
 
-
+.fa-spider:hover,
+.fa-spider:active {
+  color: rgb(228, 102, 166);
+  transition: color 0.3s;
+}
 
 /* ICON ANIMATIONS */
 
@@ -148,15 +166,20 @@ header h1,
   padding: 0 10%;
 }
 
+.main-title {
+  background-color: rgba(5, 2, 11, 0.7);
+}
+
 .main-title p {
   font-size: 1rem;
 }
 
-header h1:first-child {
-  padding-top: 10%;
+.main-title {
+  margin-top: 10rem;
+  padding: 1rem;
 }
 
-header h1:last-child {
+header h1:nth-child(2) {
   text-decoration: overline;
 }
 
@@ -169,8 +192,8 @@ header h1:last-child {
 
 .updates {
     background-color: rgba(5, 2, 11, 0.7);
-    margin-top: 7%;
-    padding: 3% 27.5%;
+    margin: 7rem 20rem;
+    padding: 2rem;
 }
 
 .updates-date,
@@ -181,6 +204,11 @@ header h1:last-child {
 .updates-title {
   font-weight: normal;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.updates-date {
+  font-size: 0.7rem;
 }
 
 .updates-date,
@@ -243,6 +271,48 @@ header h1:last-child {
 
 /* SECTION INSPIRED AND ARTICLES */
 
+.section-inspired-articles {
+  padding-bottom: 8rem;
+}
+
+.section-inspired-articles h2 {
+  font-size: 1.5rem;
+}
+
+.articles-items,
+.inspired-items {
+  padding: 0 5rem 2rem 5rem;
+}
+
+.articles-items:first-child,
+.inspired-items:first-child {
+  padding-top: 2rem;
+}
+
+.inspired-articles-items h3 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.inspired-articles-items .link-to {
+  font-size: 1rem;
+  padding-left: 2rem;
+  font-weight: normal;
+}
+
 /* SECTION POETRY */
+
+.section-poetry p {
+  border: rgb(206, 177, 143) 1px solid;
+  border-radius: 5%;
+  background-color: rgba(5, 2, 11, 0.7);
+  padding: 2rem;
+  font-style: italic;
+  height: 100%;
+}
+
+.section-poetry-row {
+  margin-bottom: 2rem;
+}
 
 /* SECTION FOOTER */
