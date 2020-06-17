@@ -97,6 +97,16 @@ footer i {
 
 /* ICONS */
 
+.rockstar {
+  text-align: center;
+}
+
+.rockstar i {
+  color: rgba(255, 249, 135, 0.8);
+  font-size: 9rem;
+  padding-top: 1rem;
+}
+
 .inspired-articles-items i {
   font-size: 1.5rem;
   padding-right: 2rem;
@@ -115,7 +125,30 @@ footer i {
 
 /* ICON ANIMATIONS */
 
+.fa-star:hover {
+  animation-name: rockstarIcon;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
+@keyframes rockstarIcon {
+  100% {
+    transform: scale(0.5) rotate(180deg);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  0% {
+    transform: scale(0.9);
+  }
+}
 
 /* LINKS */
 
@@ -274,8 +307,9 @@ header h1:nth-child(2) {
 
 .rockstar {
   background-image: url(../../resources/images/cover-rockstar.jpg);
-  background-size: cover;
-  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 20rem, cover;
+  background-position: bottom;
 }
 
 
