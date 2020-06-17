@@ -25,7 +25,9 @@ header h1,
 .section-inspired-articles h3,
 .section-inspired-articles i,
 .section-poetry h2,
-.section-poetry p {
+.section-poetry p,
+footer,
+footer i {
   color: rgba(206, 177, 143);
 }
 
@@ -43,7 +45,9 @@ header h1,
 .section-inspired-articles h3,
 .section-inspired-articles i,
 .section-poetry h2,
-.section-poetry p {
+.section-poetry p,
+footer,
+footer i {
   opacity: 0.9;
 }
 
@@ -103,6 +107,10 @@ header h1,
 .fa-spider:active {
   color: rgb(228, 102, 166);
   transition: color 0.3s;
+}
+
+footer i {
+  padding-right: 2rem;
 }
 
 /* ICON ANIMATIONS */
@@ -183,6 +191,23 @@ header h1:nth-child(2) {
   text-decoration: overline;
 }
 
+.updates-scroll {
+  max-height: 10rem;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  background: rgba(202, 169, 126, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(202, 169, 126, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(202, 169, 126, 0.9);
+}
+
 .updates h5,
 .updates p {
   font-style: italic;
@@ -208,13 +233,19 @@ header h1:nth-child(2) {
 }
 
 .updates-date {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  padding-top: 2rem;
 }
 
 .updates-date,
 .updates-text {
   font-weight: normal;
   font-style: italic;
+}
+
+.updates .link-to {
+  font-weight: normal;
+  margin-bottom: 0;
 }
 
 /* SECTION NOVELS */
@@ -239,6 +270,12 @@ header h1:nth-child(2) {
 .cover-novels {
   background-image: linear-gradient(rgba(5, 2, 11, 0.3), rgba(5, 2, 11, 0.3)), url(../../vendors/images/img-typewriter-green.jpg);
   background-size: cover;
+}
+
+.rockstar {
+  background-image: url(../../resources/images/cover-rockstar.jpg);
+  background-size: cover;
+  width: 100%;
 }
 
 
@@ -316,3 +353,15 @@ header h1:nth-child(2) {
 }
 
 /* SECTION FOOTER */
+
+.section-footer {
+  padding: 2.5rem 0;
+}
+
+.footer-items {
+  padding: 0 5rem;
+}
+
+.copyrightstamp {
+  text-align: right;
+}
