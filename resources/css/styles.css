@@ -191,6 +191,8 @@ header {
   text-align: center;
   width: 100%;
   background-color: rgba(5, 2, 11);
+  position: fixed;
+  z-index: 1;
 }
 
 .navigation-bar li {
