@@ -58,7 +58,8 @@ footer i {
 
 .section-shorts,
 .section-poetry {
-  background-color: rgba(56, 31, 37, 0.3);
+  background-color: rgb(21, 12, 18);
+  /*background-color: rgba(56, 31, 37, 0.3);*/
 }
 
 .section-novels h2,
@@ -83,7 +84,8 @@ footer i {
 }
 
 .shorts-items {
-  background-color: rgba(56,31,37, 0.3);
+  background-color: rgb(3, 1, 7);
+  /*background-color: rgba(56,31,37, 0.3);*/
 }
 
 .cover-novels p,
@@ -102,8 +104,8 @@ footer i {
 }
 
 .rockstar i {
-  color: rgba(255, 249, 135, 0.8);
-  font-size: 9rem;
+  color: rgb(206, 177, 143);
+  font-size: 8rem;
   padding-top: 1rem;
 }
 
@@ -307,13 +309,29 @@ header h1:nth-child(2) {
   background-size: cover;
 }
 
-.rockstar {
-  background-image: url(../../resources/images/cover-rockstar.jpg);
+.rockstar,
+.dead-city,
+.first-vampire {
   background-repeat: no-repeat;
   background-size: 20rem, cover;
   background-position: bottom;
 }
 
+.rockstar {
+  background-image: url(../../resources/images/cover-rockstar-v2.jpg);
+}
+
+.dead-city {
+  background-image: url(../../resources/images/cover-dead-city.jpg);
+}
+
+.first-vampire {
+  background-image: url(../../resources/images/cover-first-vampire.jpg);
+}
+
+.broken-hearts {
+  background-image: url(../../resources/images/cover-broken-hearts.jpg);
+}
 
 /* SECTION SHORT STORIES */
 
@@ -340,6 +358,16 @@ header h1:nth-child(2) {
 .cover-shorts p {
   padding-top: 5rem;
   font-size: 0.8rem;
+}
+
+.riga {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.riga {
+  background-image: url(../../resources/images/cover-shorts-riga-in-rain.jpg);
 }
 
 /* SECTION INSPIRED AND ARTICLES */
