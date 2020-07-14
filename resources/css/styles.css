@@ -2,87 +2,95 @@
 /* BASIC SETUP */
 /*------------------------------*/
 
-/** {
-    margin: 0;
-    padding: 0;
-}*/
+body {
+  background-color: black;
+}
 
+.row {
+  margin-right: 0;
+}
 
 /* REUSABLE COMPONENTS */
 
-/*Very light grey #E3DFDA
-Light grey #BDB9B5
-Grey #7D7B78
-Dark Grey #3D3C3B
-Peach #FDF8F2
-Dark Grey Peach #CCB5AD */
-
-.title-novels,
-.title-shorts,
-.title-inspired,
-.title-poetry {
-  text-align: center;
-}
-
-.title-novels h2,
-.title-shorts h2,
-.title-inspired h2,
-.title-articles h2,
-.title-poetry h2 {
-  border-bottom: 2px solid #CCB5AD;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.section-novels h3,
-.section-shorts h3,
-.section-inspired-articles h3 {
-    font-size: 100%;
-    font-weight: bold;
-}
-
-.section-novels h3,
+header h1,
+.navigation-bar a,
+.main-title p,
 .section-novels h2,
-.section-shorts h3,
+.section-novels h3,
+.section-novels p,
 .section-shorts h2,
-.section-inspired-articles h3,
+.section-shorts h3,
+.section-shorts p,
 .section-inspired-articles h2,
+.section-inspired-articles h3,
+.section-inspired-articles i,
 .section-poetry h2,
-.section-poetry p {
-  font-family: 'EB Garamond', serif;
+.section-poetry p,
+footer {
+  color: rgba(206, 177, 143);
 }
 
-.title-novels,
-.title-shorts,
-.title-inspired,
-.title-articles,
-.title-poetry {
-  padding: 7% 0;
+.section-novels,
+.section-shorts,
+.section-inspired-articles,
+.section-poetry {
+  padding: 4rem;
 }
 
-.rockstar,
-.broken-hearts,
-.dead-city,
-.first-vampire,
-.heroes,
-.rain-riga,
-.key-heart,
-.end-world,
-.when-walk,
-.divided,
-.it-in-corner,
-.alice-key,
-.pink-spider,
-.article-1,
-.article-2 {
-  text-align: center;
-  padding: 1.5%;
+.section-novels h3,
+.section-novels p,
+.section-shorts h3,
+.section-shorts p,
+.section-inspired-articles h3,
+.section-inspired-articles i,
+.section-poetry h2,
+.section-poetry p,
+footer,
+footer i {
+  opacity: 0.9;
 }
 
-.section-novels .row:last-child,
-.section-shorts .row:last-child,
+.section-novels,
 .section-inspired-articles {
-  padding-bottom: 5%;
+  background-color: rgba(5, 2, 11, 0.7);
+}
+
+.section-shorts,
+.section-poetry {
+  background-color: rgb(21, 12, 18);
+  /*background-color: rgba(56, 31, 37, 0.3);*/
+}
+
+.section-novels h2,
+.section-shorts h2,
+.section-inspired-articles h2,
+.section-poetry h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.section-novels p,
+.section-shorts p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.novel-items,
+.articles-items,
+.inspired-items {
+  background-color: rgba(56,31,37, 0.3);
+}
+
+.shorts-items {
+  background-color: rgb(3, 1, 7);
+  /*background-color: rgba(56,31,37, 0.3);*/
+}
+
+.cover-novels p,
+.cover-shorts p {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* BUTTONS */
@@ -90,44 +98,35 @@ Dark Grey Peach #CCB5AD */
 
 /* ICONS */
 
-i {
-  font-size: 300%;
-  padding: 15%;
+.rockstar {
+  text-align: center;
 }
 
-.icon-border {
-  border-radius: 15%;
-  margin: 0 30%;
+.rockstar i {
+  color: rgb(206, 177, 143);
+  font-size: 8rem;
+  padding-top: 1rem;
 }
 
-.section-novels .icon-border,
-.section-inspired-articles .icon-border {
-  border: 2px solid #3D3C3B;
+.inspired-articles-items i {
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 5rem;
 }
 
-.section-shorts .icon-border {
-  border: 2px solid #FDF8F2;
+.fa-spider:hover,
+.fa-spider:active {
+  color: rgb(228, 102, 166);
+  transition: color 0.3s;
 }
 
-.section-novels i,
-.section-inspired-articles i {
-  color: #3D3C3B;
+footer i {
+  padding-right: 2rem;
 }
-
-.section-shorts i {
-  color: #FDF8F2;
-}
-
-.section-footer i {
-  padding: 0 4% 2% 0;
-  color: #CCB5AD;
-  font-size: 1rem;
-}
-
 
 /* ICON ANIMATIONS */
 
-.rockstar .fa-star:hover {
+.fa-star:hover {
   animation-name: rockstarIcon;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -152,240 +151,291 @@ i {
   }
 }
 
-.dead-city .fa-skull:hover {
-  animation-name: skullShaken;
-  animation-duration: 1.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes skullShaken {
-  0% {
-    transform: rotate(-30deg);
-  }
-  20% {
-    transform: rotate(30deg);
-  }
-  40% {
-    transform: rotate(-30deg);
-  }
-  50% {
-    transform: rotate(30deg);
-  }
-  60% {
-    transform: rotate(-30deg);
-  }
-  70% {
-    transform: rotate(30deg);
-  }
-  80% {
-    transform: rotate(-30deg);
-  }
-  90% {
-    transform: rotate(30deg);
-  }
-  100% {
-    transform: rotate(-30deg);
-  }
-}
-
 /* LINKS */
 
-.navigation-bar a:link,
+.navigation-bar a:hover,
 .navigation-bar a:active,
-.navigation-bar a:visited {
-  color: #BDB9B5;
+.link-to:hover,
+.link-to:active {
   text-decoration: none;
 }
 
-.navigation-bar a:hover {
-  color: #CCB5AD;
-  font-weight: bolder;
-  transition: color 0.3s, font-weight 0.3s;
+.navigation-bar a:hover,
+.navigation-bar a:active {
+  color: rgba(153, 170, 138);
+  transition: color 0.3;
 }
 
-.main-title a:hover,
-.main-title h1:hover {
-  text-decoration: none;
-  color: #CCB5AD;
-  transition: color 0.3s;
+.link-to,
+footer i {
+  color: rgba(153, 170, 138);
+  font-weight: bold;
 }
 
-.section-novels a:link,
-.section-novels a:active,
-.section-novels a:visited,
-.section-inspired-articles a:link,
-.section-inspired-articles a:active,
-.section-inspired-articles a:visited {
-  color: #000;
-}
-
-.section-novels h3:hover,
-.section-novels a:hover,
-.section-novels i:hover,
-.section-inspired-articles h3:hover,
-.section-inspired-articles a:hover,
-.section-inspired-articles i:hover {
-  text-decoration: none;
-  color: #7D7B78;
-  transition:  color 0.3s;
-}
-
-/*Below on hover changes icon to pink as it's a symbol of the essay*/
-.pink-spider a:hover,
-.pink-spider i:hover,
-.pink-spider a:active,
-.pink-spider i:active {
-  color: #FF789F;
+.link-to:hover,
+.link-to:active,
+footer i {
+  color: rgba(153, 212, 176);
+  transition: color 0.3;
 }
 
 
 /* SECTION HEADER */
 
 header {
-    background-image:linear-gradient(rgba(56, 54, 54, 0.7), rgba(56, 54, 54, 0.7)), url(../../vendors/images/img-header-md.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 30rem;
-    background-attachment: fixed;
+  background-image: linear-gradient(rgba(5, 2, 11, 0.7), rgba(5, 2, 11, 0.7)), url(../../vendors/images/img-header-md.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .navigation-bar {
-    list-style: none;
-    font-family: "Inter", sans-serif;
-    text-transform: uppercase;
-    float: right;
-    margin-top: 1rem;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(5, 2, 11);
+  position: fixed;
+  z-index: 1;
 }
 
 .navigation-bar li {
   display: inline-block;
-  margin: auto 1rem;
-}
-
-.navigation-bar:last-child {
-  margin-right: 1rem;
+  padding: 1% 2%;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
 header h1,
-header h2 {
-    text-align: center;
-    font-family: 'EB Garamond', serif;
-    color: #FDF8F2;
+.main-title p {
+  font-style: bold;
+  text-align: center;
+  padding: 0 10%;
 }
 
-header h1 {
-  font-style: italic;
-  font-weight: 700;
+.main-title {
+  background-color: rgba(5, 2, 11, 0.7);
+}
+
+.main-title p {
+  font-size: 1rem;
+}
+
+.main-title {
   margin-top: 10rem;
+  padding: 1rem;
 }
 
-header h2 {
-  font-weight: 300;
+header h1:nth-child(2) {
+  text-decoration: overline;
 }
 
-/* SECTION NOVELS & SECTION INSPIRED&ARTICLES */
+.updates-scroll {
+  max-height: 10rem;
+  overflow-y: scroll;
+}
 
-.section-novels,
+::-webkit-scrollbar {
+  background: rgba(202, 169, 126, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(202, 169, 126, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(202, 169, 126, 0.9);
+}
+
+.updates h5,
+.updates p {
+  font-style: italic;
+  color: rgba(202, 169, 126);
+  opacity: 0.7;
+}
+
+.updates {
+    background-color: rgba(5, 2, 11, 0.7);
+    margin: 7rem 20rem;
+    padding: 2rem;
+}
+
+.updates-date,
+.updates-text {
+  margin-bottom: 0.1rem;
+}
+
+.updates-title {
+  font-weight: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.updates-date {
+  font-size: 0.9rem;
+  padding-top: 2rem;
+}
+
+.updates-date,
+.updates-text {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.updates .link-to {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/* SECTION NOVELS */
+
+.section-novels h3 {
+  font-size: 1.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.novel-items {
+  height: 20rem;
+  padding: 1.7rem;
+  margin-top: 1.2rem;
+  /*border: 1px solid white;*/
+}
+
+.cover-novels p {
+  font-size: 1rem;
+  padding-top: 7rem;
+}
+
+.cover-novels {
+  background-image: linear-gradient(rgba(5, 2, 11, 0.3), rgba(5, 2, 11, 0.3)), url(../../vendors/images/img-typewriter-green.jpg);
+  background-size: cover;
+}
+
+.rockstar,
+.dead-city,
+.first-vampire {
+  background-repeat: no-repeat;
+  background-size: 20rem, cover;
+  background-position: bottom;
+}
+
+.rockstar {
+  background-image: url(../../resources/images/cover-rockstar-v2.jpg);
+}
+
+.dead-city {
+  background-image: url(../../resources/images/cover-dead-city.jpg);
+}
+
+.first-vampire {
+  background-image: url(../../resources/images/cover-first-vampire.jpg);
+}
+
+.broken-hearts {
+  background-image: url(../../resources/images/cover-broken-hearts.jpg);
+}
+
+/* SECTION SHORT STORIES */
+
+.cover-shorts {
+  background-image: linear-gradient(rgba(5, 2, 11, 0.7), rgba(5, 2, 11, 0.7)), url(../../vendors/images/img-book.jpg);
+  background-size: cover;
+}
+
+.shorts-items {
+  height: 13rem;
+  margin: 0.5rem 0;
+  padding: 1.2rem;
+}
+
+.section-shorts h3 {
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+
+/*.shorts-items p {
+  padding: 0.7rem;
+}*/
+
+.cover-shorts p {
+  padding-top: 5rem;
+  font-size: 0.8rem;
+}
+
+.ticket,
+.riga,
+.walking {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.ticket {
+  background-image: url(../../resources/images/cover-shorts-end-world.jpg);
+}
+
+.riga {
+  background-image: url(../../resources/images/cover-shorts-riga-in-rain.jpg);
+}
+
+.walking {
+  background-image: url(../../resources/images/cover-shorts-walking.jpg);
+}
+
+/* SECTION INSPIRED AND ARTICLES */
+
 .section-inspired-articles {
-  background-color: #E3DFDA;  /*grey background*/
+  padding-bottom: 8rem;
 }
 
-.section-novels h3,
-.section-novels h2,
-.section-inspired-articles h3,
 .section-inspired-articles h2 {
-  color: #3D3C3B; /*dark text*/
+  font-size: 1.5rem;
 }
 
-/*SECTION INSPIRED & ARTICLES*/
-
-.section-articles {
-  margin-left: -5%;
+.articles-items,
+.inspired-items {
+  padding: 0 5rem 2rem 5rem;
 }
 
-.section-inspired h3,
-.section-articles h3 {
+.articles-items:first-child,
+.inspired-items:first-child {
+  padding-top: 2rem;
+}
+
+.inspired-articles-items h3 {
+  font-size: 1rem;
   text-align: left;
 }
 
-.title-inspired,
-.section-inspired,
-.padding-inspired-articles {
-  border-right: 2px solid #CCB5AD;
+.inspired-articles-items .link-to {
+  font-size: 1rem;
+  padding-left: 2rem;
+  font-weight: normal;
 }
-
-.section-inspired-articles {
-  padding-bottom: 0;
-}
-
-/*Below class is only to fix the line issue not extending through bottom padding*/
-.padding-inspired-articles {
-  padding-top: 5%;
-}
-
-/* SECTION SHORT STORIES & SECTION POETRY */
-
-.pink-spider h3,
-.alice-key h3,
-.article-1 h3,
-.article-2 h3 {
-  margin: 20% 20% 20% 0;
-  text-align: left;
-}
-
-.pink-spider,
-.alice-key,
-.article-1,
-.article-2 {
-  text-align: right;
-}
-
-.section-shorts,
-.section-poetry {
-  background-color: #3D3C3B; /* dark background*/
-}
-
-.section-shorts h3,
-.section-shorts h2,
-.section-poetry h2,
-.section-poetry p {
-  color: #FDF8F2; /* light text*/
-}
-
 
 /* SECTION POETRY */
 
 .section-poetry p {
-  border: 2px solid #CCB5AD;
-  height: 100%;
+  border: rgb(206, 177, 143) 1px solid;
   border-radius: 5%;
-  padding: 7%;
-  letter-spacing: 1.5px;
-  font-size: 0.8rem;
+  background-color: rgba(5, 2, 11, 0.7);
+  padding: 2rem;
+  font-style: italic;
+  height: 100%;
 }
 
 .section-poetry-row {
-  padding: 0 3%;
-  padding-bottom: 3%;
-}
-
-.section-poetry-row:last-child {
-  padding-bottom: 5%;
+  margin-bottom: 2rem;
 }
 
 /* SECTION FOOTER */
 
 .section-footer {
-  background-color: #000;
-  color: #CCB5AD;
-  padding: 3% 0;
-  font-weight: bold;
-  line-height: 2rem;
+  padding: 2.5rem 0;
 }
 
-.section-footer .copyrightstamp {
+.footer-items {
+  padding: 0 5rem;
+}
+
+.copyrightstamp {
   text-align: right;
-  font-size: 85%;
-  font-weight: normal;
 }

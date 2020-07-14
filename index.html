@@ -20,33 +20,80 @@
   </head>
   <body>
 
-  <div>
-
 <!-- HEADER -->
 
     <header>
         <nav class="row section-navigation">
           <div class="col">
             <ul class="navigation-bar">
-                  <li><a href="#title">Главная</a></li>
-                  <li><a href="#section-novels">Рассказы</a></li>
-                  <li><a href="#">Миниатюры</a></li>
-                  <li><a href="#">По мотивам</a></li>
-                  <li><a href="#">Поэзия</a></li>
-                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#link-to-novels">Novels</a></li>
+                  <li><a href="#">Short Stories</a></li>
+                  <li><a href="#">Stories Inspired By</a></li>
+                  <li><a href="#">Articles</a></li>
+                  <li><a href="#">Haiku Poetry</a></li>
+                  <li><a href="#">Contacts</a></li>
               </ul>
           </div>
         </nav>
+
           <div class="row main-title">
             <div class="col">
-              <a href="title"><h1>Ch-cat.ru Писательский блог</h1></a>
+              <h1 id="link-to-main">Ch-cat.ru</h1>
+              <h1>Writer's blog</h1>
+              <p>Dive into the world of novels,stories and poetry that is still being
+              written and change in front of your eyes.
+              <br/>All with a touch of mystics.</p>
             </div>
           </div>
-          <div clas="row">
+          <!-- <div class="row main-title">
             <div class="col">
-              <h2>авторские рассказы и поэзия</h2>
+              <p>This page is dedicated to one writer.<br />
+              Dive into the world of novels and stories being written and
+              change in front of your eyes.
+              <br/>Short stories just finished.
+              <br/>Poetry - that you won't find anywhere else.
+              <br/>All inspired bymystery, that will make you doubt if
+              reality is the only truth.</p>
             </div>
-          </div>
+          </div> -->
+            <div class="row">
+              <div class="col updates">
+                <p class="updates-title">Updates and News</p>
+                <div class="updates-scroll">
+                  <p class="updates-date">
+                    16/06/2020
+                  </p>
+                  <p class="updates-text">
+                    The website's got revamped! Check out the new style.
+                  </p>
+                  <p class="updates-date">
+                    11/10/2013
+                  </p>
+                  <p class="updates-text">
+                    Update in the Rockstar. The last chapter was rewritten.
+                  <p><a href="#" class="link-to">Read this chapter</a></p>
+                  </p>
+                  <p class="updates-date">
+                    22/08/2013
+                  </p>
+                  <p class="updates-text">
+                    The main character, the rockstar, of the novel finally got
+                    a name! Short, strong and sharp.
+                  <!-- <p><a href="#" class="link-to">Read this chapter</a></p> -->
+                  </p>
+                  <p class="updates-date">
+                    17/07/2013
+                  </p>
+                  <p class="updates-text">
+                    A new chapter in the Rockstar is ready. It shows some
+                    backstage magic and reveales the character of the rockstar.
+                  <p><a href="#" class="link-to">Read this chapter</a></p>
+                  </p>
+                </div>
+              </div>
+            </div>
+
     </header>
 
 <!-- SECTION FOR NOVELS -->
@@ -54,49 +101,134 @@
     <section class="section-novels">
       <div class="row">
         <div class="col title-novels">
-          <h2>Рассказы</h2>
+          <h2 id="link-to-novels">Novels</h2>
         </div>
       </div>
 
-<!-- first row of icons&titles -->
-          <div class="row section-novels-1">
-                <div class="col-3"></div>
-                <div class="col-2 rockstar">
-                  <div class="icon-border"><a href="#"><i class="fas fa-star"></i></a></div>
-                </div>
-                <div class="col-2 dead-city">
-                  <div class="icon-border"><a href="#"><i class="fas fa-skull"></i></a></div>
-                </div>
-                <div class="col-2 first-vampire">
-                  <div class="icon-border"><a href="#"><i class="fas fa-moon"></i></a></div>
-                  </div>
-                <div class="col-3"></div>
-              </div>
-              <div class="row section-novels-1">
-                <div class="col-3"></div>
-                <div class="col-2 rockstar"><a href="#"><h3>Рокзвезда</h3></a></div>
-                <div class="col-2 dead-city"><a href="#"><h3>Мертвый Город</h3></a></div>
-                <div class="col-2 first-vampire"><a href="#"><h3>Первый Вампир</h3></a></div>
-                <div class="col-3"></div>
-              </div>
+<!-- Covers and book description -->
 
-<!-- second row of icons&titles -->
-          <div class="row section-novels-2">
-                <div class="col-4"></div>
-                <div class="col-2 broken-hearts">
-                  <div class="icon-border"><a href="#"><i class="fas fa-heart-broken"></i></a></div>
+<!-- there are 2 books per line
+1 Rockstar and Dead city
+2 First Vampire and Broken Hearts
+3 Heroes -->
+
+<!-- 1 Rockstar and Dead City -->
+
+          <div class="row section-novels-items">
+              <div class="col-6">
+              <div class="row">
+                <div class="col novel-items cover-novels rockstar">
+                  <!-- in here will be the book cover -->
+                  <i class="fas fa-star"></i>
                 </div>
-                <div class="col-2 heroes">
-                  <div class="icon-border"><a href="#"><i class="fas fa-mask"></i></a></div>
+                <div class="col  novel-items">
+                  <!-- in here is the book description -->
+                  <h3>the Rockstar</h3>
+                  <p>
+                    Just a regular university life. Just a regular student
+                    music band. But what if two people reality had just a fine
+                    line, that could be breached involuntarily...
+                  </p>
+                  <P><a href="#" class="link-to">Read</a></P></P>
                 </div>
-                <div class="col-4"></div>
               </div>
-              <div class="row section-novels-2">
-                <div class="col-4"></div>
-                <div class="col-2 broken-hearts"><a href="#"><h3>Серия Разбитые Сердца</h3></a></div>
-                <div class="col-2 heroes"><a href="#"><h3>Серия Герои Меча и Магии</h3></a></div>
-                <div class="col-4"></div>
               </div>
+              <div class="col-6">
+              <div class="row">
+                <div class="col  novel-items cover-novels dead-city">
+                  <!-- here will be the book cover -->
+                  <p>
+                    <!-- cover coming soon -->
+                  </p>
+                </div>
+                <div class="col  novel-items">
+                  <!-- here will be the book description -->
+                  <h3>the Dead City</h3>
+                  <P>
+                    This is a story of a monster hunter. The city rots from
+                    within and produces unearthly creatures. But wherever there
+                    is a desease, there is a cure. And as an antidote, the city
+                    produced her - a hunter, a cleaner... She who has the need
+                    to look into the darkest corners of the city's soul.
+                  </P>
+                  <p><a href="#" class="link-to">Read</a></p>
+                </div>
+              </div>
+              </div>
+          </div>
+
+<!-- 2 First Vampire and Broken Hearts -->
+
+          <div class="row section-novels-items">
+            <div class="col-6">
+            <div class="row">
+              <div class="col  novel-items cover-novels first-vampire">
+                <!-- in here will be the book cover -->
+                <p>
+                  <!-- cover coming soon -->
+                </p>
+              </div>
+              <div class="col  novel-items">
+                <!-- in here will be the book description -->
+                <h3>the First Vampire</h3>
+                <p>
+                  Cell by cell. Bone by bone. Muscle by muscle. The very first
+                  vampire is born. Do you know who you are if you have no memory
+                  of where you've been before and have no one to explain the
+                  world around you. How can you tell what's good what's evil...
+                </p>
+                <p><a href="#" class="link-to">Read</a></p>
+              </div>
+            </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col novel-items cover-novels broken-hearts">
+                  <!-- here is the book cover -->
+                  <p>
+                    <!-- cover coming soon -->
+                  </p>
+                </div>
+                <div class="col  novel-items">
+                  <!-- here is the book description -->
+                  <h3>the Broken Hearts Series</h3>
+                  <p>
+                    Series of stories all dedicated to the broken hearts of
+                    the world. If you had your heart broken, you will know how
+                    it feels like... a tribute to all who suffered.
+                  </p>
+                  <p><a href="#" class="link-to">Read</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- 3 Heroes -->
+
+          <!-- <div class="row section-novels-items">
+            <div class="col-6">
+            <div class="row heroes">
+              <div class="col  novel-items cover-novels"> -->
+                <!-- the book cover -->
+                <!-- <p>
+                  cover coming soon
+                </p>
+              </div>
+              <div class="col novel-items"> -->
+                <!-- the book description -->
+                <!-- <h3>the Heroes of Might and Magic series</h3>
+                <p>
+                  Series of stories dedicated to becoming a hero in various
+                  circumstances.
+                  In the world of magic, no matter how big or small you are, if
+                  you are born with a hero's heart. Every day opens possibilities
+                  to find your heroic deed.
+                </p>
+                <p><a href="#" class="link-to">Read</a></p>
+              </div>
+            </div>
+            </div>
+          </div> -->
 
     </section>
 
@@ -106,95 +238,182 @@
 
     <div class="row">
       <div class="col title-shorts">
-        <h2>Миниатюры</h2>
+        <h2 id="link-to-stories">Short Stories</h2>
       </div>
     </div>
 
-<!-- first row of icons&titles -->
-    <div class="row section-shorts-1">
-      <div class="col-3"></div>
-      <div class="col-2 key-heart">
-        <div class="icon-border"><a href="#"><i class="fas fa-key"></i></a></div>
-      </div>
-      <div class="col-2 end-world">
-        <div class="icon-border"><a href="#"><i class="fas fa-ticket-alt"></i></a></div>
-      </div>
-      <div class="col-2 when-walk">
-        <div class="icon-border"><a href="#"><i class="fas fa-cloud-sun"></i></a></div>
+<!-- Covers and stories' description -->
+
+<!-- there are 3 stories per line
+1 A Key to a Heart, A ticket to the End of the World, When I'm walking
+2 Riga in Rain, Divided, the One in the Corner -->
+
+<!-- 1 A Key to a Heart, A ticket to the End of the World, When I'm walking  -->
+
+  <div class="row section-shorts-items">
+    <div class="col-4">
+      <div class="row key-heart">
+        <div class="col shorts-items cover-shorts">
+          <!-- story cover -->
+          <p>
+            cover coming soon
+          </p>
         </div>
-      <div class="col-3"></div>
+        <div class="col shorts-items">
+          <h3>A Key to a heart</h3>
+          <!-- story description -->
+          <p>
+            A short essay about living with a closed heart.
+          </p>
+          <p><a href="#" class="link-to">Read</a></p>
+        </div>
+      </div>
     </div>
-    <div class="row section-shorts-1">
-      <div class="col-3"></div>
-      <div class="col-2 key-heart"><a href="#"><h3>Ключ К Сердцу</h3></a></div>
-      <div class="col-2 end-world"><a href="#"><h3>Билет До Конца Света</h3></a></div>
-      <div class="col-2 when-walk"><a href="#"><h3>Когда Я Иду</h3></a></div>
-      <div class="col-3"></div>
+    <div class="col-4">
+      <div class="row">
+        <div class="col  shorts-items cover-shorts ticket">
+          <!-- story cover -->
+          <p>
+            <!-- cover coming soon -->
+          </p>
+        </div>
+        <div class="col shorts-items">
+          <h3>A Ticket to the end of the world</h3>
+          <!-- story description -->
+          <p>
+            A short story about kids and the end of the world imagination.
+          </p>
+          <p><a href="#" class="link-to">Read</a></p>
+        </div>
+      </div>
     </div>
+    <div class="col-4">
+      <div class="row">
+        <div class="col shorts-items cover-shorts walking">
+          <!-- story cover -->
+          <p>
+            <!-- cover coming soon -->
+          </p>
+        </div>
+        <div class="col shorts-items">
+          <h3>When I'm walking</h3>
+          <!-- story description -->
+          <p>
+            An essay about what what an IT person might think about while walking.
+          </p>
+          <p><a href="#" class="link-to">Read</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- second row of icons&titles -->
-    <div class="row section-shorts-2">
-      <div class="col-3"></div>
-      <div class="col-2 rain-riga">
-        <div class="icon-border"><a href="#"><i class="fas fa-cloud-rain"></i></a></div>
+<!-- 2 Riga in Rain, Divided, the One in the Corner -->
+
+  <div class="row section-shorts-items">
+    <div class="col-4">
+      <div class="row">
+        <div class="col shorts-items cover-shorts riga">
+          <!-- story cover -->
+          <p>
+            <!-- cover coming soon -->
+          </p>
+        </div>
+        <div class="col shorts-items">
+          <h3>Riga in the rain</h3>
+          <!-- story description -->
+          <p>
+            An essay on how Riga feels when it's raining.
+          </p>
+          <p><a href="#" class="link-to">Read</a></p>
+        </div>
       </div>
-      <div class="col-2 divided">
-        <div class="icon-border"><a href="#"><i class="fas fa-bolt"></i></a></div>
-      </div>
-      <div class="col-2 it-in-corner">
-        <div class="icon-border"><a href="#"><i class="fas fa-crow"></i></a></div>
-      </div>
-      <div class="col-3"></div>
     </div>
-    <div class="row section-shorts-2">
-      <div class="col-3"></div>
-      <div class="col-2 rain-riga"><a href="#"><h3>Рига В Дожде</h3></a></div>
-      <div class="col-2 divided"><a href="#"><h3>Воедино Divided</h3></a></div>
-      <div class="col-2 it-in-corner"><a href="#"><h3>Тот, Что В Углу</h3></a></div>
-      <div class="col-3"></div>
+    <div class="col-4">
+      <div class="row divided">
+        <div class="col shorts-items cover-shorts">
+          <!-- story cover -->
+          <p>
+            cover coming soon
+          </p>
+        </div>
+        <div class="col shorts-items">
+          <h3>United / Divided</h3>
+          <!-- story description -->
+          <p>
+            A drama in a dialog.
+          </p>
+          <p><a href="#" class="link-to">Read</a></p>
+        </div>
+      </div>
     </div>
+    <div class="col-4">
+      <div class="row corner">
+        <div class="col shorts-items cover-shorts">
+          <!-- story cover -->
+          <p>
+            cover coming soon
+          </p>
+        </div>
+        <div class="col shorts-items">
+          <h3>The one in the corner</h3>
+          <!-- story description -->
+          <p>
+            An essay about inner fears.
+          </p>
+          <p><a href="#" class="link-to">Read</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   </section>
 
 <!-- SECTION FOR ESSAYS AND ARTICLES -->
-<!-- This section is divided into 2: 1) short essays inspired by different topics, and 2) articles -->
+<!-- This section is divided into 2:
+1) short essays inspired by different topics, and
+2) articles -->
 
  <section class="section-inspired-articles">
    <div class="row">
-     <div class="col-6 title-inspired"><h2>По мотивам</h2></div>
-     <div class="col-6 title-articles"><h2>Статьи</h2></div>
+     <div class="col-6 title-inspired"><h2>Stories Inspired by</h2></div>
+     <div class="col-6 title-articles"><h2>Articles</h2></div>
    </div>
 
-<!-- Part of this section is for Essays -->
-  <div class="row inspired-articles-row">
-    <div class="col-6 section-inspired">
-      <div class="row">
-        <div class="col-6 alice-key"><a href="#"><i class="fas fa-key"></i></a></div>
-        <div class="col-6 alice-key"><a href="#"><h3>Ключ Для Алисы</h3></a></div>
-      </div>
-      <div class="row">
-        <div class="col-6 pink-spider"><a href="#"><i class="fas fa-spider"></i></a></div>
-        <div class="col-6 pink-spider"><a href="#"><h3>Темно</h3></a></div>
-      </div>
-    </div>
-
-<!-- Part of this section is for articles -->
-    <div class="col-6 section-articles">
-    <div class="row">
-      <div class="col-6 article-1"><a href="#"><i class="fas fa-feather-alt"></i></a></div>
-      <div class="col-6 article-2"><a href="#"><h3>Таланты и Хобби</h3></a></div>
-    </div>
-    <div class="row">
-      <div class="col-6 article-1"><a href="#"><i class="fas fa-feather-alt"></i></a></div>
-      <div class="col-6 article-2"><a href="#"><h3>Пишут все, кому не лень?</h3></a></div>
-    </div>
-    </div>
-
-  </div>
-
   <div class="row">
-    <div class="col-6 padding-inspired-articles"></div>
-    <div class="col-6"></div>
+
+<!-- This part is for Inspired Stories -->
+
+    <div class="col-6 inspired-articles-items">
+      <div class="row inspired-items">
+        <i class="fas fa-key"></i>
+        <h3>A Key for Alice</h3>
+        <h3><a href="#" class="link-to">Read</a></h3>
+      </div>
+    <!-- </div>
+    <div class="col-2"> -->
+      <div class="row inspired-items">
+        <i class="fas fa-spider"></i>
+        <h3>Pink Spider</h3>
+        <h3><a href="#" class="link-to">Read</a></h3>
+      </div>
+    </div>
+
+<!-- This part is for articles -->
+
+    <div class="col-6 inspired-articles-items">
+      <div class="row articles-items">
+        <i class="fas fa-feather"></i>
+        <h3>Of talents and hobbies</h3>
+        <h3><a href="#" class="link-to">Read</a></h3>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="col-2"> -->
+      <div class="row articles-items">
+        <i class="fas fa-feather"></i>
+        <h3>Everyone can write?</h3>
+        <h3><a href="#" class="link-to">Read</a></h3>
+      </div>
+    </div>
   </div>
 
   </section>
@@ -204,7 +423,7 @@
 
    <div class="row">
      <div class="col title-poetry">
-       <h2>Хайку</h2>
+       <h2>Haiku</h2>
      </div>
    </div>
 
@@ -246,22 +465,18 @@
 
 <footer class="section-footer">
   <div class="row">
-    <div class="col-1"></div>
-    <div class="col-5">Контакты</div>
-    <div class="col-5 copyrightstamp">&copy ch-cat.ru</div>
-    <div class="col-1"></div>
+    <div class="col footer-items">Contacts</div>
+    <div class="col footer-items copyrightstamp">&copy ch-cat.ru</div>
   </div>
   <div class="row">
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col footer-items">
       <a href="mailto: chcatblog@gmail.com"><i class="fas fa-at"></i></a>
       <a href="https://www.facebook.com/n/?find-friends%2Fbrowser%2F&aref=1587232440140070&medium=email&mid=5a394102f3e54G5af3f20fd9ddG5a39459c54126G32b&bcode=2.1587232441.AbyECUf5KdgHDDhvihI&n_m=chcatblog%40gmail.com&lloc=profile_pic"><i class="fab fa-facebook"></i></a>
       <a href="https://twitter.com/chcatblog"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-vk"></i></a>
       <a href="#"><i class="icon-lj"></i></a>
     </div>
-    <div class="col-5 copyrightstamp">All rights reserved</div>
-    <div class="col-1"></div>
+    <div class="col footer-items copyrightstamp">All rights reserved</div>
   </div>
 </footer>
 
