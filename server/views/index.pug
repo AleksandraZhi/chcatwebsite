@@ -1,0 +1,345 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+
+    title="Ch-Cat.ru"
+
+    link(rel='stylesheet', href='/css/main-styles.css')
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/fontawesome-free/css/all.css')
+    link(rel='image', href='/images/img-header-md.jpg')
+    //- link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,600&family=Inter:wght@100;200;300&display=swap" rel="stylesheet")
+    //- link(href="/../../vendors/css/js/all.js" rel="stylesheet")
+
+    //- style
+    //- include /images
+
+  body(style="background-color: #000")
+
+    header(style="background: linear-gradient(rgba(5, 2, 11, 0.7), rgba(5, 2, 11, 0.7)), url(images/img-header-md.jpg); background-size: cover; background-attachment: fixed")
+      nav.section.navigation
+        ul.navigation-bar
+          li
+            a(href="#") Home
+          li
+            a(href="#link-to-novels") Novels
+          li
+            a(href="#link-to-stories") Short Stories
+          li
+            a(href="#link-to-articles") Stories inspired by
+          li
+            a(href="#link-to-articles") Articles
+          li
+            a(href="#link-to-poetry") Haiku Poetry
+          li
+            a(href="#link-to-contacts") Contacts
+
+      block header-content
+
+        .row.main-title
+          .col
+            h1#link-to-main Ch-cat.ru
+            h1 Writer's blog
+            p
+              | Dive into the world of novels, stories and poetry that is still
+              | being written and change in front of your eyes.
+            p All with a touch of mystics.
+
+        .row
+          .col.updates
+            p.updates-title Updates and News
+            .updates-scroll
+              p.updates-date 16/06/2020
+              p.updates-text The website's got revamped! Check out the new style.
+              p.updates-date 11/10/2013
+              p.updates-text Update in the Rockstar. The last chapter was rewritten.
+              p.updates-date 22/08/2013
+              p.updates-text
+                | The main character, the rockstar, of the novel finally got
+                | a name! Short, strong and sharp.
+              p.updates-date 17/07/2013
+              p.updates-text
+                | A new chapter in the Rockstar is ready. It shows some
+                | a name! Short, strong and sharp.
+                | backstage magic and reveales the character of the rockstar.
+                p
+                  a(class="link-to" href="#") Read this chapter
+
+    block novels
+
+      .section-novels
+        .row
+          .col.title-novels
+            h2#link-to-novels novels
+
+        .row.section-novels-items
+          .col-6
+            .row
+              .col.novel-items.cover-novels.rockstar(style="background: url(images/cover-rockstar-v2.jpg); background-size: 20rem, cover; background-position: bottom; background-repeat: no-repeat")
+                i.fas.fa-star
+              .col.novel-items
+                h3 the Rockstar
+                p
+                  | Just a regular university life. Just a regular student
+                  | music band. But what if two people reality had just a fine
+                  | line, that could be breached involuntarily...
+                p
+                  a(class="link-to" href="#") Read
+
+          .col-6
+            .row
+              .col.novel-items.cover-novels.dead-city(style="background: url(images/cover-dead-city.jpg); background-size: 20rem, cover; background-position: bottom; background-repeat: no-repeat")
+              .col.novel-items
+                h3 the Dead City
+                p
+                  | This is a story of a monster hunter. The city rots from
+                  | within and produces unearthly creatures. But wherever there
+                  | is a desease, there is a cure. And as an antidote, the city
+                  | produced her - a hunter, a cleaner... She who has the need
+                  | to look into the darkest corners of the city's soul.
+                p
+                  a(class="link-to" href="#") Read
+        .row.section-novels-items
+          .col-6
+            .row
+              .col.novel-items.cover-novels.first-vampire(style="background: url(images/cover-first-vampire.jpg); background-size: 20rem, cover; background-position: bottom; background-repeat: no-repeat")
+              .col.novel-items
+                h3 the First Vampire
+                p
+                  | Cell by cell. Bone by bone. Muscle by muscle. The very first
+                  | vampire is born. Do you know who you are if you have no memory
+                  | of where you've been before and have no one to explain the
+                  | world around you. How can you tell what's good what's evil...
+                p
+                  a(class="link-to" href="#") Read
+
+          .col-6
+            .row
+              .col.novel-items.cover-novels.broken-hearts(style="background: url(images/cover-broken-hearts.jpg); background-size: 20rem, cover; background-position: bottom; background-repeat: no-repeat")
+              .col.novel-items
+                h3 the Broken Hearts Series
+                p
+                  | Series of stories all dedicated to the broken hearts of
+                  | the world. If you had your heart broken, you will know how
+                  | it feels like... a tribute to all who suffered.
+                p
+                  a(class="link-to" href="#") Read
+
+    block short-stories
+
+      .section-shorts
+        .row
+          .col.title-shorts
+            h2#link-to-stories Short Stories
+
+        .row.section-shorts-items
+          .col-4
+            .row.key-heart
+              .col.shorts-items.cover-shorts(style="background: url(images/cover-shorts-heart-key.jpg); background-size: 13rem, cover; background-position: bottom; background-repeat: no-repeat")
+                p
+              .col.shorts-items
+                h3 A Key to a Heart
+                p A short essay about living with a closed heart.
+                p
+                  a(class="link-to" href="#") Read
+          .col-4
+            .row.ticket
+              .col.shorts-items.cover-shorts(style="background: url(images/cover-shorts-end-world.jpg); background-size: 13rem, cover; background-position: bottom; background-repeat: no-repeat")
+              .col.shorts-items
+                h3 A Ticket to the end of the world
+                p A short story about kids and the end of the world imagination.
+                p
+                  a(class="link-to" href="#") Read
+          .col-4
+            .row.walking
+              .col.shorts-items.cover-shorts(style="background: url(images/cover-shorts-walking.jpg); background-size: 13rem, cover; background-position: bottom; background-repeat: no-repeat")
+              .col.shorts-items
+                h3 When I'm walking
+                p An essay about what what an IT person might think about while walking.
+                p
+                  a(class="link-to" href="#") Read
+
+        .row.section-shorts-items
+          .col-4
+            .row.riga
+              .col.shorts-items.cover-shorts(style="background: url(images/cover-shorts-riga-in-rain.jpg); background-size: 13rem, cover; background-position: bottom; background-repeat: no-repeat")
+              .col.shorts-items
+                h3 Riga in the rain
+                p An essay on how Riga feels when it's raining.
+                p
+                  a(class="link-to" href="#") Read
+          .col-4
+            .row.divided
+              .col.shorts-items.cover-shorts(style="background: url(images/cover-shorts-divided.jpg); background-size: 13rem, cover; background-position: bottom; background-repeat: no-repeat")
+                p
+              .col.shorts-items
+                h3 United / Divided
+                p A drama in a dialogue
+                p
+                  a(class="link-to" href="#") Read
+          .col-4
+            .row.corner
+              .col.shorts-items.cover-shorts(style="background: url(images/cover-shorts-corner.jpg); background-size: 13rem, cover; background-position: bottom; background-repeat: no-repeat")
+                p
+              .col.shorts-items
+                h3 The one in the corner
+                p An essay about inner fears.
+                p
+                  a(class="link-to" href="#") Read
+
+    block inspired-articles
+
+      .section-inspired-articles
+        .row
+          .col-6.title-inspired
+            h2#link-to-articles Stories Inspired by
+          .col-6.title-articles
+            h2 Articles
+
+        .row
+          .col-6.inspired-articles-items
+            .row.col.inspired-items
+              i.fas.fa-key
+              h3 A Key for Alice
+              h3
+                a(class="link-to" href="#") Read
+            .row.col.inspired-items
+              i.fas.fa-spider
+              h3 A Pink Spider
+              h3
+                a(class="link-to" href="#") Read
+          .col-6.inspired-articles-items
+            .row.col.inspired-items
+              i.fas.fa-feather
+              h3 Of talents and hobbies
+              h3
+                a(class="link-to" href="#") Read
+            .row.col.inspired-items
+              i.fas.fa-feather
+              h3 Everyone can write?
+              h3
+                a(class="link-to" href="#") Read
+
+    block poetry
+
+      .section-poetry
+        .row
+          .col.title-poetry
+            h2#link-to-poetry Haiku
+
+        .row.section-poetry-row
+          .col-1
+          .col-2
+            p
+              | И пока я не ушел,
+              | Дай сказать прости.
+              | Ты закрыла дверь...
+          .col-2
+            p
+              | За окном пурга —
+              | Зиме никак не уйти.
+              | Мир теперь во льду
+          .col-2
+            p
+              | Снова возвращаюсь
+              | Ни душой, ни телом, ни умом.
+              | Город печали
+          .col-2
+            p
+              | Вечный дождь.
+              | Вот дорога предо мной.
+              | Снова дома я
+          .col-2
+            p
+              | Восход солнца,
+              | Где далекий горизонт.
+              | Забери меня
+          .col-1
+
+        .row.section-poetry-row
+          .col-1
+          .col-2
+            p
+              | Открыты двери.
+              | Отступает прочь зима —
+              | Дорога весны
+          .col-2
+            p
+              | В тумане вся река.
+              | Куда же теперь плыть?
+              | Голос птицы в тишине
+          .col-2
+            p
+              | Вишни цвет расцвел в душе,
+              | Не смотря на снег.
+              | За окном уже весна
+          .col-2
+            p
+              | Темный небосвод.
+              | Уплывают облака.
+              | Зонтик от дождя
+          .col-2
+            p
+              | Сумерки в душе.
+              | Бесконечный мыслей ход.
+              | Снова дождь
+          .col-1
+
+        .row.section-poetry-row
+          .col-2
+          .col-2
+            p
+              | Души снегом скованы
+              | Где живет любовь?
+              | Мы забыли туда путь
+          .col-2
+            p
+              | Середина февраля.
+              | Рождение солнца
+              | С улыбкой на устах
+          .col-2
+            p
+              | Не оглядывайся,
+              | Нить Ариадны исчезнет.
+              | Плачущая луна
+          .col-2
+            p
+              | Подожди, я с тобою,
+              | Ветра дух и шелест листвы.
+              | Улетаю
+          .col-2
+
+        .row.section-poetry-row
+          .col-4
+          .col-2
+            p
+              | Отпусти — отпускаю.
+              | Дождь смывает последние слезы.
+              | Прости и прощай
+          .col-2
+            p
+              | Принятие…
+              | Подожди, я с тобой попрощаюсь.
+              | Эхо в пустоте
+          .col-4
+
+    footer.section-footer
+      .row
+        .col.footer-items
+          p Contacts
+        .col.footer-items.copyrightstamp
+          p &copy ch-cat.ru
+      .row
+        .col.footer-items
+          a("mailto: chcatblog@gmail.com")
+            i.fas.fa-at
+          a("#")
+            i.fab.fa-facebook
+          a("https://twitter.com/chcatblog")
+            i.fab.fa-twitter
+          a("#")
+            i.fab.fa-vk
+        .col.footer-items.copyrightstamp
+          p All rights reserved
