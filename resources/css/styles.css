@@ -26,8 +26,7 @@ header h1,
 .section-inspired-articles i,
 .section-poetry h2,
 .section-poetry p,
-footer,
-footer i {
+footer {
   color: rgba(206, 177, 143);
 }
 
@@ -38,10 +37,23 @@ footer i {
   padding: 4rem;
 }
 
+/* REUSABLE COMPONENTS */
+
+header h1,
+.navigation-bar a,
+.main-title p,
+.section-novels h2,
 .section-novels h3,
 .section-novels p,
+<<<<<<< HEAD
+.section-shorts h2,
 .section-shorts h3,
 .section-shorts p,
+.section-inspired-articles h2,
+=======
+.section-shorts h3,
+.section-shorts p,
+>>>>>>> a11c5e9a711f3be25102a11248f5f53e7cb59946
 .section-inspired-articles h3,
 .section-inspired-articles i,
 .section-poetry h2,
@@ -58,7 +70,8 @@ footer i {
 
 .section-shorts,
 .section-poetry {
-  background-color: rgba(56, 31, 37, 0.3);
+  background-color: rgb(21, 12, 18);
+  /*background-color: rgba(56, 31, 37, 0.3);*/
 }
 
 .section-novels h2,
@@ -83,7 +96,8 @@ footer i {
 }
 
 .shorts-items {
-  background-color: rgba(56,31,37, 0.3);
+  background-color: rgb(3, 1, 7);
+  /*background-color: rgba(56,31,37, 0.3);*/
 }
 
 .cover-novels p,
@@ -92,18 +106,34 @@ footer i {
   text-align: center;
 }
 
-/* BUTTONS */
+.section-shorts,
+.section-poetry {
+  background-color: rgba(56, 31, 37, 0.3);
+}
 
+.section-novels h2,
+.section-shorts h2,
+.section-inspired-articles h2,
+.section-poetry h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 4%;
+}
 
-/* ICONS */
+.section-novels p,
+.section-shorts p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
 
 .rockstar {
   text-align: center;
 }
 
 .rockstar i {
-  color: rgba(255, 249, 135, 0.8);
-  font-size: 9rem;
+  color: rgb(206, 177, 143);
+  font-size: 8rem;
   padding-top: 1rem;
 }
 
@@ -165,16 +195,17 @@ footer i {
   transition: color 0.3;
 }
 
-.link-to {
+.link-to,
+footer i {
   color: rgba(153, 170, 138);
   font-weight: bold;
 }
 
 .link-to:hover,
-.link-to:active {
-  opacity: 0.7;
-  color: rgba(153, 170, 138);
-  transition: color, opacity 0.3;
+.link-to:active,
+footer i {
+  color: rgba(153, 212, 176);
+  transition: color 0.3;
 }
 
 
@@ -307,13 +338,107 @@ header h1:nth-child(2) {
   background-size: cover;
 }
 
-.rockstar {
-  background-image: url(../../resources/images/cover-rockstar.jpg);
+.rockstar,
+.dead-city,
+.first-vampire {
   background-repeat: no-repeat;
   background-size: 20rem, cover;
   background-position: bottom;
 }
 
+.rockstar {
+  background-image: url(../../resources/images/cover-rockstar-v2.jpg);
+}
+
+.dead-city {
+  background-image: url(../../resources/images/cover-dead-city.jpg);
+}
+
+.first-vampire {
+  background-image: url(../../resources/images/cover-first-vampire.jpg);
+}
+
+.broken-hearts {
+  background-image: url(../../resources/images/cover-broken-hearts.jpg);
+}
+
+/* SECTION SHORT STORIES */
+
+.cover-shorts {
+  background-image: linear-gradient(rgba(5, 2, 11, 0.7), rgba(5, 2, 11, 0.7)), url(../../vendors/images/img-book.jpg);
+  background-size: cover;
+}
+
+.shorts-items {
+  height: 13rem;
+  margin: 0.5rem 0;
+  padding: 1.2rem;
+}
+
+.section-shorts h3 {
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+
+/*.shorts-items p {
+  padding: 0.7rem;
+}*/
+
+.cover-shorts p {
+  padding-top: 5rem;
+  font-size: 0.8rem;
+}
+
+.ticket,
+.riga,
+.walking {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.ticket {
+  background-image: url(../../resources/images/cover-shorts-end-world.jpg);
+}
+
+.riga {
+  background-image: url(../../resources/images/cover-shorts-riga-in-rain.jpg);
+}
+
+.walking {
+  background-image: url(../../resources/images/cover-shorts-walking.jpg);
+}
+
+/* SECTION INSPIRED AND ARTICLES */
+
+.section-inspired-articles {
+  padding-bottom: 8rem;
+}
+
+.section-inspired-articles h2 {
+  font-size: 1.5rem;
+}
+
+.articles-items,
+.inspired-items {
+  padding: 0 5rem 2rem 5rem;
+}
+
+.articles-items:first-child,
+.inspired-items:first-child {
+  padding-top: 2rem;
+}
+
+.inspired-articles-items h3 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.inspired-articles-items .link-to {
+  font-size: 1rem;
+  padding-left: 2rem;
+  font-weight: normal;
+}
 
 /* SECTION SHORT STORIES */
 
