@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.render("main");
+router.get('/', (req, res) => {
+  res.render('index');
 });
 
+router.get("/novels-rockstar", (req, res) => {
+  res.render("layout");
+})
 
 module.exports = router;

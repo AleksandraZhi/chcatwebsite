@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "server for ch-cat blog",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon ./start.js --ignore public/",
@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.24",
     "path": "^0.12.7",
-    "pug": "^3.0.0"
+    "pug": "^3.0.0",
+    "slugs": "^0.1.3"
   }
 }
