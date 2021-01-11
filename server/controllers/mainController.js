@@ -2,9 +2,11 @@
 const mongoose = require('mongoose');
 const Book = mongoose.model('Book');
 const util = require('util');
+const year = require('year');
 
 exports.mainPage = (req, res) => {
-  res.render("../views/index");
+  var copyrightYear = year();
+  res.render("../views/index", {copyrightYear});
 }
 
 exports.novelsPage = async (req, res) => {
@@ -14,5 +16,6 @@ exports.novelsPage = async (req, res) => {
   const bookTitle = util.format(text.bookTitle);
   const bookChapter = util.format(text.bookChapter);
   const bookText = util.format(text.bookText);
-  res.render("../views/novels-main", {bookTitle, bookChapter, bookText});
+  var copyrightYear = year();
+  res.render("../views/novels-main", {bookTitle, bookChapter, bookText, copyrightYear});
 }
