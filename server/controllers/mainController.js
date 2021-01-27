@@ -1,8 +1,11 @@
 
 const mongoose = require('mongoose');
-const Book = mongoose.model('Book');
+const Novel = mongoose.model('Novel');
+const path = require('path');
+const fs = require('fs');
 const util = require('util');
 const year = require('year');
+const fetch = require('node-fetch');
 
 exports.mainPage = (req, res) => {
   var copyrightYear = year();
