@@ -8,7 +8,6 @@ mongoose.connection.on("error", (err) => {
   console.log("${err.message}");
 });
 
-//importing our models
 require("./models/Books")
 
 const app = require("./app");
