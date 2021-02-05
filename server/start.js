@@ -2,13 +2,12 @@ const mongoose = require("mongoose");
 
 require("dotenv").config({ path: "variables.env"});
 
-mongoose.connect(process.env.DATABASE, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DATABASE, { useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true });
 mongoose.Promise = global.Promise;
 mongoose.connection.on("error", (err) => {
   console.log("${err.message}");
 });
 
-//importing our models
 require("./models/Books")
 
 const app = require("./app");
