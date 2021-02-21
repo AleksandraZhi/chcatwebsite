@@ -12,24 +12,10 @@ html
 
   body(style="background-color: #000")
 
-    .container-fluid
+    .container-fluid.p-0
+
       header
-        nav.section.navigation
-          ul.navigation-bar
-            li
-              a(href="/") Home
-            li
-              a(href="#link-to-novels") Novels
-            li
-              a(href="/#link-to-stories") Short Stories
-            li
-              a(href="/#link-to-articles") Stories inspired by
-            li
-              a(href="/#link-to-articles") Articles
-            li
-              a(href="/#link-to-poetry") Haiku Poetry
-            li
-              a(href="/#link-to-contacts") Contacts
+        include includes/index-header-nav
 
         block header-content
 
@@ -332,21 +318,4 @@ html
                 | Эхо в пустоте
             .col-4
 
-      footer#link-to-contacts.section-footer
-        .row
-          .col.footer-items
-            p Contacts
-          .col.footer-items.copyrightstamp
-            p &copy ch-cat.ru #{copyrightYear}
-        .row
-          .col.footer-items
-            a("mailto: chcatblog@gmail.com")
-              i.fas.fa-at
-            a("#")
-              i.fab.fa-facebook
-            a("https://twitter.com/chcatblog")
-              i.fab.fa-twitter
-            a("#")
-              i.fab.fa-vk
-          .col.footer-items.copyrightstamp
-            p All rights reserved
+      include includes/index-footer
