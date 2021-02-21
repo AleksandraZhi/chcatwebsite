@@ -45,7 +45,7 @@ p {
 /* BUTTONS */
 
 .back .btn,
-.chapters .btn {
+.btn-group .btn {
   color: rgb(206, 177, 143);
   padding: 0.5rem;
   text-transform: uppercase;
@@ -81,15 +81,19 @@ p {
 .navigation-bar a:active,
 .back .btn:hover,
 .back .btn:active,
-.chapters .btn:hover,
-.chapters .btn:active {
+.prev a:hover,
+.next a:active,
+.btn-group .btn:hover,
+.btn-group .btn:active {
   color: rgb(153, 170, 138);
   transition: color 0.3s;
 }
 
 i,
 a,
-.back .btn {
+.back .btn,
+.prev,
+.next {
   color: rgba(153, 170, 138);
 }
 
@@ -98,15 +102,17 @@ a,
 .sectino-footer a:hover,
 .section-footer a:active,
 .back .btn:hover,
-.back .btn:active {
+.back .btn:active,
+.btn-group .btn:hover,
+.btn-group .btn:active {
   color: rgba(153, 212, 176);
   transition: color 0.3s;
 }
 
 .back .btn:active,
 .back .btn:hover,
-.chapters .btn:active,
-.chapters .btn:hover {
+.btn-group .btn:active,
+.btn-group .btn:hover {
   background-color: rgba(206, 177, 143, 0.2);
   border: rgb(206, 177, 143);
   transition: background-color 0.3s;
@@ -141,6 +147,10 @@ a,
 
 .content h3 {
   padding-bottom: 1rem;
+}
+
+.chapter-nav {
+  padding-top: 2rem;;
 }
 
 /* SECTION FOOTER */

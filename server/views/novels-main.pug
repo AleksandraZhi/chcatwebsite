@@ -9,14 +9,28 @@ block content
         -  const textArray = bookText.split('\n')
         each paragraph in textArray
           p #{paragraph}
+    .row.chapter-nav
+      .col-4
+      .col-4.btn-group.prev-next
+        -let prevChapter = `${parseFloat(bookChapter) - 1}`;
+        -let nextChapter = `${parseFloat(bookChapter) + 1}`;
+          case parseFloat(bookChapter)
+            when 1
+              a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая
+            when totalChapters
+              a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая
+            default
+              a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая
+              a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая
+      .col-4
     .row
       .col-3
       .col-6.btn-group.chapters
         - let chapter=1;
         while chapter <= totalChapters
-          a(class="btn btn-outline-dark chapter" href='/novels/rockstar/' + chapter) #{chapter++}
+          a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + chapter) #{chapter++}
       .col-3
 
     .row
       .col.back
-        a(class="btn btn-outline-dark", href='/novels/rockstar/' + bookChapter) back to the top
+        a(class="btn btn-outline-dark", href="/novels/rockstar/" + bookChapter) back to the top
