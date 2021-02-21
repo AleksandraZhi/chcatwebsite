@@ -12,11 +12,11 @@ block content
     .row
       .col-3
       .col-6.btn-group.chapters
-        - const chapters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        each chapter in chapters
-          a(class="btn btn-outline-dark chapter" href='/novels/rockstar/' + chapter) #{chapter}
+        - let chapter=1;
+        while chapter <= totalChapters
+          a(class="btn btn-outline-dark chapter" href='/novels/rockstar/' + chapter) #{chapter++}
       .col-3
 
     .row
       .col.back
-        a(class="btn btn-outline-dark", href="/novels/rockstar/1") back to the top
+        a(class="btn btn-outline-dark", href='/novels/rockstar/' + bookChapter) back to the top
