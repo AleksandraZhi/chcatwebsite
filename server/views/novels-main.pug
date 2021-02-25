@@ -1,36 +1,46 @@
 extend layout
 
 block content
-  .content
-    .row
+  .container-fluid.content
+    .row.section-title
       .col
-        h2 #{bookTitle}
-        h4 #{bookChapter}
-        -  const textArray = bookText.split('\n')
+        h2 #{title}
+    .row.section-chapter-text
+      .col
+        h4 #{chapter}
+        -  const textArray = chapterText.split('\n')
         each paragraph in textArray
           p #{paragraph}
-    .row.chapter-nav
-      .col-4
-      .col-4.btn-group.prev-next
-        -let prevChapter = `${parseFloat(bookChapter) - 1}`;
-        -let nextChapter = `${parseFloat(bookChapter) + 1}`;
-          case parseFloat(bookChapter)
-            when 1
-              a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая
-            when totalChapters
-              a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая
-            default
-              a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая
-              a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая
-      .col-4
-    .row
-      .col-3
-      .col-6.btn-group.chapters
-        - let chapter=1;
-        while chapter <= totalChapters
-          a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + chapter) #{chapter++}
-      .col-3
 
-    .row
-      .col.back
-        a(class="btn btn-outline-dark", href="/novels/rockstar/" + bookChapter) back to the top
+    - let prevChapter = `${parseFloat(chapter) - 1}`;
+    - let nextChapter = `${parseFloat(chapter) + 1}`;
+    - let curChapter=1;
+    .row.section-chapter-nav
+      .col
+        .row
+          .col-2
+          .col-8.chapter-nav
+            case parseFloat(chapter)
+              when 1
+                .btn-group
+                  while curChapter <= totalChapters
+                      a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + curChapter) #{curChapter++}
+                  a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая глава
+
+              when totalChapters
+                .btn-group
+                  a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая глава
+                  while curChapter <= totalChapters
+                    a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + curChapter) #{curChapter++}
+                
+              default  
+                .btn-group 
+                  a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая глава
+                  while curChapter <= totalChapters
+                    a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + curChapter) #{curChapter++}
+                  a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая глава
+          .col-2
+
+        .row
+          .col.back
+            a(class="btn btn-outline-dark", href="/novels/rockstar/" + chapter) наверх
