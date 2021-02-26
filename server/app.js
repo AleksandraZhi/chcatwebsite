@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes/index");
 const helpers = require("./helpers");
 const path = require('path');
+const errorHandlers = require('./handlers/errorHandlers');
 
 const app = express();
 

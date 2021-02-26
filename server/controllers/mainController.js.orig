@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+exports.novelsPage = (req, res) => {
+  res.render("../views/main");
+=======
 const mongoose = require('mongoose');
 const Novel = mongoose.model('Novel');
 const path = require('path');
@@ -24,4 +28,5 @@ exports.novelsPage = async (req, res) => {
   const bookText = fs.readFileSync(path.join(__dirname, bookPath), 'utf-8');
   const copyrightYear = year();
   res.render('../views/novels-main', {bookTitle, bookChapter, bookText, copyrightYear});
+>>>>>>> 9425af7... amended route with chapter selection
 }

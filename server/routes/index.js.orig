@@ -5,4 +5,6 @@ router.get('/', (req, res) => {
 	res.render('index')
 })
 
-module.exports = router;
+router.get(`/novels/rockstar/:chapterNr`, mainController.novelsPage)
+
+module.exports = router
