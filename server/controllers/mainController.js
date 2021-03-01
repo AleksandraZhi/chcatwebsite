@@ -12,10 +12,10 @@ exports.mainPage = (req, res) => {
 
 exports.novelsPage = async (req, res) => {
 	try {
-		const curChapterNr = parseInt(req.params.chapterNr)
+		const currentChapterNr = parseInt(req.params.chapterNr)
 		const text = await Novel.findOne({
 			title: 'Рокзвезда',
-			chapter: `${curChapterNr}`,
+			chapter: `${currentChapterNr}`,
 		}).exec()
 		const totalChapters = await Novel.countDocuments({
 			title: 'Рокзвезда',

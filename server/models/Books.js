@@ -3,7 +3,7 @@ mongoose.Promise = global.Promise
 
 const Schema = mongoose.Schema
 
-const novelSchema = new mongoose.Schema(
+const novelChapterSchema = new mongoose.Schema(
 	{
 		title: String,
 		chapter: String, //can be chapter name or chapter number
@@ -14,4 +14,4 @@ const novelSchema = new mongoose.Schema(
 	}
 )
 
-module.exports = mongoose.model('Novel', novelSchema)
+module.exports = mongoose.model('Novel', novelChapterSchema)

@@ -14,7 +14,7 @@ block content
 
     - let prevChapter = `${parseFloat(chapter) - 1}`;
     - let nextChapter = `${parseFloat(chapter) + 1}`;
-    - let curChapter=1;
+    - let currentChapter=1;
     .row.section-chapter-nav
       .col
         .row
@@ -23,21 +23,21 @@ block content
             case parseFloat(chapter)
               when 1
                 .btn-group
-                  while curChapter <= totalChapters
-                      a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + curChapter) #{curChapter++}
+                  while currentChapter <= totalChapters
+                      a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + currentChapter) #{currentChapter++}
                   a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая глава
 
               when totalChapters
                 .btn-group
                   a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая глава
-                  while curChapter <= totalChapters
-                    a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + curChapter) #{curChapter++}
+                  while currentChapter <= totalChapters
+                    a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + currentChapter) #{currentChapter++}
                 
               default  
                 .btn-group 
                   a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая глава
-                  while curChapter <= totalChapters
-                    a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + curChapter) #{curChapter++}
+                  while currentChapter <= totalChapters
+                    a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + currentChapter) #{currentChapter++}
                   a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая глава
           .col-2
 
