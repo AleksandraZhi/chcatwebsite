@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const routes = require('./routes/index')
 const helpers = require('./helpers')
 const path = require('path')
+const { novelsPage } = require('./controllers/mainController')
 
 const app = express()
 
