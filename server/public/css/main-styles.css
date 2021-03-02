@@ -1,0 +1,460 @@
+/*------------------------------*/
+/* BASIC SETUP */
+/*------------------------------*/
+
+/* REUSABLE COMPONENTS */
+
+header h1,
+.navigation-bar a,
+.main-title p,
+.section-novels h2,
+.section-novels h3,
+.section-novels p,
+.section-shorts h2,
+.section-shorts h3,
+.section-shorts p,
+.section-inspired-articles h2,
+.section-inspired-articles h3,
+.section-inspired-articles i,
+.section-poetry h2,
+.section-poetry p,
+footer {
+  color: rgba(206, 177, 143);
+}
+
+.section-novels,
+.section-shorts,
+.section-inspired-articles,
+.section-poetry {
+  padding: 4rem;
+}
+
+.section-novels h3,
+.section-novels p,
+.section-shorts h3,
+.section-shorts p,
+.section-inspired-articles h3,
+.section-inspired-articles i,
+.section-poetry h2,
+.section-poetry p,
+footer,
+footer i {
+  opacity: 0.9;
+}
+
+.section-novels,
+.section-inspired-articles {
+  background-color: rgba(5, 2, 11, 0.7);
+}
+
+.section-shorts,
+.section-poetry {
+  background-color: rgb(21, 12, 18);
+}
+
+.section-novels h2,
+.section-shorts h2,
+.section-inspired-articles h2,
+.section-poetry h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.section-novels p,
+.section-shorts p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.novel-items,
+.articles-items,
+.inspired-items {
+  background-color: rgba(56,31,37, 0.3);
+}
+
+.shorts-items {
+  background-color: rgb(3, 1, 7);
+}
+
+.cover-novels p,
+.cover-shorts p {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.col.rockstar,
+.col.dead-city,
+.col.first-vampire,
+.col.broken-hearts,
+.key-heart .cover-shorts,
+.ticket .cover-shorts,
+.walking .cover-shorts,
+.riga .cover-shorts,
+.divided .cover-shorts,
+.corner .cover-shorts {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* BUTTONS */
+
+
+/* ICONS */
+
+.rockstar {
+  text-align: center;
+}
+
+.rockstar i {
+  color: rgb(206, 177, 143);
+  font-size: 8rem;
+  padding-top: 1rem;
+}
+
+.inspired-articles-items i {
+  font-size: 1.5rem;
+}
+
+.fa-spider:hover,
+.fa-spider:active {
+  color: rgb(228, 102, 166);
+  transition: color 0.3s;
+}
+
+footer i {
+  padding-right: 2rem;
+}
+
+/* ICON ANIMATIONS */
+
+.fa-star:hover {
+  animation-name: rockstarIcon;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rockstarIcon {
+  100% {
+    transform: scale(0.5) rotate(180deg);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  0% {
+    transform: scale(0.9);
+  }
+}
+
+/* LINKS */
+
+.navigation-bar a:hover,
+.navigation-bar a:active,
+.link-to:hover,
+.link-to:active {
+  text-decoration: none;
+}
+
+.navigation-bar a:hover,
+.navigation-bar a:active {
+  color: rgba(153, 170, 138);
+  transition: color 0.3;
+}
+
+.link-to,
+footer i,
+.icons {
+  color: rgba(153, 170, 138);
+  font-weight: bold;
+}
+
+.link-to:hover,
+.link-to:active,
+footer i,
+.icons {
+  color: rgba(153, 212, 176);
+  transition: color 0.3;
+}
+
+
+/* SECTION HEADER */
+
+header {
+  background: linear-gradient(rgba(5, 2, 11, 0.7), rgba(5, 2, 11, 0.7)), url(../img/img-header-md.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(5, 2, 11, 0.7);
+}
+
+.navigation-bar {
+  list-style: none;
+  text-align: center;
+  width: 95%;
+  background-color: rgba(5, 2, 11);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navigation-bar li {
+  display: inline-block;
+  padding: 1% 2%;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.main-title h1,
+.main-title p {
+  font-style: bold;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.main-title p {
+  font-size: 1rem;
+}
+
+.main-title {
+  padding: 10rem 1rem 1rem 1rem;
+}
+
+header h1:nth-child(2) {
+  text-decoration: overline;
+}
+
+.updates-scroll {
+  max-height: 10rem;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  background: rgba(202, 169, 126, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(202, 169, 126, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(202, 169, 126, 0.9);
+}
+
+.updates h5,
+.updates p {
+  font-style: italic;
+  color: rgba(202, 169, 126);
+  opacity: 0.7;
+}
+
+.updates {
+  background-color: rgba(5, 2, 11, 0.7);
+  margin: 7rem 10rem;
+  padding: 2rem;
+}
+
+.updates-title {
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.updates-date {
+  font-size: 0.9rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+.updates-text {
+  font-weight: normal;
+}
+
+.updates-date,
+.updates-text {
+  margin-bottom: 0.1rem;
+  font-style: italic;
+}
+
+.updates .link-to {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/* SECTION NOVELS */
+
+.section-novels h3 {
+  font-size: 1.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.novel-items {
+  height: 20rem;
+  padding: 1.7rem;
+  margin-top: 1.2rem;
+  /*border: 1px solid white;*/
+}
+
+.cover-novels p {
+  font-size: 1rem;
+  padding-top: 7rem;
+}
+
+/*default covers if the booke doesn't have a cover yet*/
+.cover-novels {
+  background-image: linear-gradient(rgba(5, 2, 11, 0.3), rgba(5, 2, 11, 0.3)), url(../img/img-typewriter-green.jpg);
+  background-size: cover;
+}
+
+.rockstar {
+  background-image: url(../img/cover-rockstar-v2.jpg);
+}
+
+.dead-city {
+  background-image: url(../img/cover-dead-city.jpg);
+}
+
+.first-vampire {
+  background-image: url(../img/cover-first-vampire.jpg);
+}
+
+.broken-hearts {
+  background-image: url(../img/cover-broken-hearts.jpg);
+}
+
+/* SECTION SHORT STORIES */
+
+.section-shorts {
+  margin: 0;
+}
+
+.cover-shorts {
+  background-image: linear-gradient(rgba(5, 2, 11, 0.7), rgba(5, 2, 11, 0.7)), url(../img/img-book.jpg);
+  background-size: cover;
+}
+
+.shorts-items {
+  height: 13rem;
+  margin: 0.5rem 0;
+  padding: 1.2rem;
+}
+
+.section-shorts h3 {
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+
+.key-heart .cover-shorts {
+  background-image: url(../img/cover-shorts-heart-key.jpg);
+}
+
+.ticket .cover-shorts {
+  background-image: url(../img/cover-shorts-end-world.jpg);
+}
+
+.walking .cover-shorts {
+  background-image: url(../img/cover-shorts-walking.jpg);
+}
+
+.riga .cover-shorts {
+  background-image: url(../img/cover-shorts-riga-in-rain.jpg);
+}
+
+.divided .cover-shorts {
+  background-image: url(../img/cover-shorts-divided.jpg);
+}
+
+.corner .cover-shorts {
+  background-image: url(../img/cover-shorts-corner.jpg);
+}
+
+.cover-shorts p {
+  padding-top: 5rem;
+  font-size: 0.8rem;
+}
+
+/* SECTION INSPIRED AND ARTICLES */
+
+.section-inspired-articles {
+  padding-bottom: 8rem;
+}
+
+.section-inspired-articles h2 {
+  font-size: 1.5rem;
+}
+
+.inspired-articles-items h3 {
+  font-size: 1rem;
+}
+
+.inspired-articles-items .link-to {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.inspired-items {
+  padding: 1rem;
+  border: rgb(21, 12, 18) solid 1px;
+  border-radius: 43%;
+  text-align: center;
+}
+
+
+/* SECTION POETRY */
+
+.section-poetry p {
+  border: rgb(206, 177, 143) 1px solid;
+  border-radius: 5%;
+  background-color: rgba(5, 2, 11, 0.7);
+  padding: 2rem;
+  font-style: italic;
+  height: 100%;
+}
+
+.section-poetry-row {
+  margin-bottom: 2rem;
+}
+
+/* SECTION FOOTER */
+
+.section-footer {
+  padding: 2.5rem 0;
+}
+
+.footer-items {
+  padding: 0 5rem;
+}
+
+.copyrightstamp {
+  text-align: right;
+}
+
+.icons {
+  height: 5px;
+  color: rgb(153, 170, 138);
+}
+
+.fb {
+  background-image: url(../../vendors/fonts/facebook.svg)
+}
+
+.email {
+  background-image: url(../../vendors/fonts/email.svg);
+}
+
+.twitter {
+  background-image: url(../../vendors/fonts/twitter.svg);
+}
+
+.vk {
+  background-image: url(../../vendors/fonts/vk.svg);
+}
+
+.back {
+  background-color: rgb(5, 2, 11);
+}

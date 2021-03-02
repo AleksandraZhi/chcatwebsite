@@ -1,0 +1,183 @@
+/*------------------------------*/
+/* BASIC SETUP */
+/*------------------------------*/
+
+.container-fluid,
+.navigation-bar,
+.section-footer {
+	background-color: rgb(5, 2, 11);
+}
+
+/* REUSABLE COMPONENTS */
+
+h1,
+h2,
+h3,
+h4,
+p,
+.navigation-bar a,
+i,
+.section-footer {
+	color: rgba(206, 177, 143);
+}
+
+i {
+	opacity: 0.9;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p {
+	font-size: 0.9rem;
+	text-align: justify;
+	margin-bottom: 0rem;
+}
+
+.content,
+.btn {
+	background-color: rgb(21, 12, 18);
+}
+
+.section-title,
+.section-chapter-nav {
+	background-color: rgba(206, 177, 143, 0.1);
+	border-radius: 0.5rem;
+}
+
+/* BUTTONS */
+
+.chapter-nav {
+	text-align: center;
+}
+
+.back .btn,
+.btn-group .btn {
+	color: rgb(206, 177, 143);
+	padding: 0.4rem;
+	font-size: 75%;
+	text-transform: uppercase;
+	border: rgb(206, 177, 143) 1px solid;
+	border-radius: 0.25rem;
+}
+
+.back,
+.chapters {
+	text-align: center;
+	padding: 1rem;
+}
+
+/* ICONS */
+
+.section-footer i {
+	padding-right: 2rem;
+}
+
+/* LINKS */
+
+.navigation-bar a:hover,
+.navigation-bar a:active,
+.back .btn a:hover,
+.back .btn a:active,
+.link-to:hover,
+.link-to:active {
+	text-decoration: none;
+}
+
+.navigation-bar a:hover,
+.navigation-bar a:active,
+.back .btn:hover,
+.back .btn:active,
+.prev a:hover,
+.next a:active,
+.btn-group .btn:hover,
+.btn-group .btn:active {
+	color: rgb(153, 170, 138);
+	transition: color 0.3s;
+}
+
+i,
+a,
+.back .btn,
+.prev,
+.next {
+	color: rgba(153, 170, 138);
+}
+
+.section-footer i:hover,
+.section-footer i:active,
+.sectino-footer a:hover,
+.section-footer a:active,
+.back .btn:hover,
+.back .btn:active,
+.btn-group .btn:hover,
+.btn-group .btn:active {
+	color: rgba(153, 212, 176);
+	transition: color 0.3s;
+}
+
+.back .btn:active,
+.back .btn:hover,
+.btn-group .btn:active,
+.btn-group .btn:hover {
+	background-color: rgba(206, 177, 143, 0.2);
+	border: rgb(206, 177, 143);
+	transition: background-color 0.3s;
+}
+
+/* SECTION HEADER */
+
+.navigation-bar {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+.navigation-bar li {
+	display: inline-block;
+	padding: 1% 2%;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+/* CONTENT */
+
+.section-title {
+	padding-top: 4rem;
+	padding-bottom: 1rem;
+}
+
+.section-chapter-text {
+	padding: 2rem 2rem 0rem 2rem;
+}
+
+.content h3 {
+	padding-bottom: 1rem;
+}
+
+.chapter-nav {
+	padding-top: 2rem;
+}
+
+/* SECTION FOOTER */
+
+footer {
+	padding: 1rem;
+}
+
+.footer-items {
+	padding: 0 5rem;
+}
+
+.copyrightstamp p {
+	text-align: right;
+}
+
+.icons {
+	height: 5px;
+	color: rgb(153, 170, 138);
+}

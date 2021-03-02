@@ -1,9 +1,46 @@
-extend layout
+extend text-layout
 
 block content
-  
-.row
-  .col
-    h2 Novel name
-    h4 Chapter 1
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  .container-fluid.content
+    .row.section-title
+      .col
+        h2 #{title}
+    .row.section-chapter-text
+      .col
+        h4 #{chapter}
+        -  const textArray = chapterText.split('\n')
+        each paragraph in textArray
+          p #{paragraph}
+
+    - let prevChapter = `${parseFloat(chapter) - 1}`;
+    - let nextChapter = `${parseFloat(chapter) + 1}`;
+    - let currentChapter=1;
+    .row.section-chapter-nav
+      .col
+        .row
+          .col-2
+          .col-8.chapter-nav
+            case parseFloat(chapter)
+              when 1
+                .btn-group
+                  while currentChapter <= totalChapters
+                      a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + currentChapter) #{currentChapter++}
+                  a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая глава
+
+              when totalChapters
+                .btn-group
+                  a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая глава
+                  while currentChapter <= totalChapters
+                    a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + currentChapter) #{currentChapter++}
+                
+              default  
+                .btn-group 
+                  a(class="btn btn-outline-dark prev" href="/novels/rockstar/" + prevChapter) Предыдущая глава
+                  while currentChapter <= totalChapters
+                    a(class="btn btn-outline-dark chapter" href="/novels/rockstar/" + currentChapter) #{currentChapter++}
+                  a(class="btn btn-outline-dark next" href="/novels/rockstar/" + nextChapter) Следующая глава
+          .col-2
+
+        .row
+          .col.back
+            a(class="btn btn-outline-dark", href="/novels/rockstar/" + chapter) наверх

@@ -1,12 +1,9 @@
-const express = require("express");
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
+const mainController = require('../controllers/mainController')
 
-router.get('/', (req, res) => {
-  res.render('index');
-});
+router.get('/', mainController.mainPage)
 
-router.get("/novels-rockstar", (req, res) => {
-  res.render("layout");
-})
+router.get('/novels/rockstar/:chapterNr', mainController.novelsPage)
 
-module.exports = router;
+module.exports = router
