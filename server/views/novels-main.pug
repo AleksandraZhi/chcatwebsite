@@ -23,13 +23,16 @@ block content
         .row
           .col-2
           .col-8.chapter-nav
-            - chapterNumber = chapter.slice(0)
+            - chapterNumber = chapter.slice(0, 1)
             case parseFloat(chapterNumber)
               when 1
                 .btn-group
                   while currentChapter <= totalChapters
                     - currentChapterURL = `${url}/${currentChapter}`
-                    a(class="btn btn-outline-dark chapter" href=currentChapterURL) #{currentChapter++}
+                    if currentChapter == chapterNumber
+                      a(class="btn btn-outline-dark btn-active" href=currentChapterURL) #{currentChapter++}
+                    else
+                      a(class="btn btn-outline-dark chapter" href=currentChapterURL) #{currentChapter++}
                   a(class="btn btn-outline-dark next" href=nextChapterURL) Следующая глава
 
               when totalChapters
@@ -37,18 +40,25 @@ block content
                   a(class="btn btn-outline-dark prev" href=prevChapterURL) Предыдущая глава
                   while currentChapter <= totalChapters
                     - currentChapterURL = `${url}/${currentChapter}`
-                    a(class="btn btn-outline-dark chapter" href=currentChapterURL) #{currentChapter++}
+                    if currentChapter == chapterNumber 
+                      a(class="btn btn-outline-dark btn-active" href=currentChapterURL) #{currentChapter++}
+                    else
+                      a(class="btn btn-outline-dark chapter" href=currentChapterURL) #{currentChapter++}
+                    
                 
               default  
                 .btn-group 
                   a(class="btn btn-outline-dark prev" href=prevChapterURL) Предыдущая глава
                   while currentChapter <= totalChapters
                     - currentChapterURL = `${url}/${currentChapter}`
-                    a(class="btn btn-outline-dark chapter" href= currentChapterURL) #{currentChapter++}
+                    if currentChapter == chapterNumber 
+                      a(class="btn btn-outline-dark btn-active" href=currentChapterURL) #{currentChapter++}
+                    else
+                      a(class="btn btn-outline-dark chapter" href=currentChapterURL) #{currentChapter++}
                   a(class="btn btn-outline-dark next" href=nextChapterURL) Следующая глава
           .col-2
 
         .row
           .col.back
-            - currentChapterURL = `${url}/${chapter}`
+            - currentChapterURL = `${url}/${chapter.slice(0.1)}`
             a(class="btn btn-outline-dark", href=currentChapterURL) наверх

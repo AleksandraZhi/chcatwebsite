@@ -16,7 +16,7 @@ exports.novelsPage = async (req, res) => {
 		const currentChapterNr = parseInt(req.params.chapterNr)
 		const text = await Novel.findOne({
 			slug: `${currentNovelSlug}`,
-			chapter: `${currentChapterNr}`,
+			chapter: { $regex: '^' + currentChapterNr, $options: 'i' },
 		}).exec()
 		const totalChapters = await Novel.countDocuments({
 			slug: `${currentNovelSlug}`,
