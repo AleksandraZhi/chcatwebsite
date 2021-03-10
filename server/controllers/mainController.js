@@ -12,13 +12,14 @@ exports.mainPage = (req, res) => {
 
 exports.novelsPage = async (req, res) => {
 	try {
+		const currentNovelSlug = req.params.novelTitle
 		const currentChapterNr = parseInt(req.params.chapterNr)
 		const text = await Novel.findOne({
-			title: 'Рокзвезда',
-			chapter: `${currentChapterNr}`,
+			slug: `${currentNovelSlug}`,
+			chapter: { $regex: '^' + currentChapterNr, $options: 'i' },
 		}).exec()
 		const totalChapters = await Novel.countDocuments({
-			title: 'Рокзвезда',
+			slug: `${currentNovelSlug}`,
 		})
 		const title = util.format(text.title)
 		const chapter = util.format(text.chapter)
@@ -32,9 +33,11 @@ exports.novelsPage = async (req, res) => {
 			title,
 			chapter,
 			chapterText,
+			currentNovelSlug,
 			copyrightYear,
 			totalChapters,
 		})
 	} catch {
 		err => console.log(err)
 	}
+}

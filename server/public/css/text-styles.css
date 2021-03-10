@@ -2,6 +2,7 @@
 /* BASIC SETUP */
 /*------------------------------*/
 
+html,
 .container-fluid,
 .navigation-bar,
 .section-footer {
@@ -48,6 +49,10 @@ p {
 }
 
 /* BUTTONS */
+
+a.btn-active {
+	background-color: rgba(206, 177, 143, 0.2);
+}
 
 .chapter-nav {
 	text-align: center;
@@ -123,7 +128,7 @@ a,
 .btn-group .btn:active,
 .btn-group .btn:hover {
 	background-color: rgba(206, 177, 143, 0.2);
-	border: rgb(206, 177, 143);
+	border: rgb(206, 177, 143) 1px solid;
 	transition: background-color 0.3s;
 }
 
