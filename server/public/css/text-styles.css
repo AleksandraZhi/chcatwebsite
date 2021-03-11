@@ -3,10 +3,20 @@
 /*------------------------------*/
 
 html,
+body,
 .container-fluid,
 .navigation-bar,
 .section-footer {
 	background-color: rgb(5, 2, 11);
+}
+
+* {
+	font-family: sans-serif;
+}
+
+h2,
+p {
+	font-family: 'Garamond', serif;
 }
 
 /* REUSABLE COMPONENTS */
@@ -16,10 +26,14 @@ h2,
 h3,
 h4,
 p,
-.navigation-bar a,
 i,
 .section-footer {
-	color: rgba(206, 177, 143);
+	color: rgb(206, 177, 143);
+}
+
+.navigation-bar a,
+footer p {
+	color: rgba(206, 177, 143, 0.8);
 }
 
 i {
@@ -32,7 +46,7 @@ h2 {
 }
 
 p {
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	text-align: justify;
 	margin-bottom: 0rem;
 }
@@ -137,7 +151,7 @@ a,
 .navigation-bar {
 	list-style: none;
 	text-align: center;
-	width: 100%;
+	width: 100vw;
 	position: fixed;
 	z-index: 1;
 }
@@ -152,7 +166,7 @@ a,
 /* CONTENT */
 
 .section-title {
-	padding-top: 4rem;
+	padding-top: 4.5rem;
 	padding-bottom: 1rem;
 }
 
