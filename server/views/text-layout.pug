@@ -9,18 +9,18 @@ html
     link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='/fontawesome-free/css/all.css')
     link(href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,600&family=Inter:wght@100;200;300&display=swap" rel="stylesheet")
-    script(src='/js/text.js')
 
   body
 
-    .container-fluid.p-0
+    .container-fluid
 
-      header
-
+      header.row
         include includes/index-header-nav
 
-      block content
+      .row 
+        block content
 
-      include includes/index-footer
+      .row 
+        include includes/index-footer
 
 <!-- Brand icons are licenced here https://fontawesome.com/license -->
