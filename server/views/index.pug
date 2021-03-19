@@ -6,7 +6,7 @@ html
     title="Ch-Cat.ru"
 
     link(rel='stylesheet', href='/css/main-styles.css')
-    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.css')
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous")
     link(rel='stylesheet', href='/fontawesome-free/css/all.css')
     link(href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,600&family=Inter:wght@100;200;300&display=swap" rel="stylesheet")
 
@@ -207,106 +207,249 @@ html
                   h3
                     a(class="link-to" href="#") Read
 
+
       .section-poetry#link-to-poetry
         .row
           .col.title-poetry
             h2 Haiku
+        .row 
+          .col
+            div(id="carouselExampleControls" class="carousel slide" data-ride="carousel")
+              .carousel-inner
+                .carousel-item.active
+                  .row 
+                    .col-2
+                    .col
+                      p 
+                        | И пока я не ушел,
+                        br
+                        | Дай сказать прости.
+                        br
+                        | Ты закрыла дверь...
+                    .col
+                      p
+                        | За окном пурга —
+                        br
+                        | Зиме никак не уйти.
+                        br
+                        | Мир теперь во льду
+                    .col
+                      p
+                        | Снова возвращаюсь
+                        br
+                        | Ни душой, ни телом, ни умом.
+                        br
+                        | Город печали
+                    .col
+                      p
+                        | Вечный дождь.
+                        br
+                        | Вот дорога предо мной.
+                        br
+                        | Снова дома я
+                    .col-2
+                .carousel-item
+                  .row
+                    .col-2
+                    .col 
+                      p
+                        |  Восход солнца,
+                        br
+                        |  Где далекий горизонт.
+                        br
+                        |  Забери меня
+                    .col 
+                      p 
+                        | Открыты двери.
+                        br
+                        | Отступает прочь зима —
+                        br
+                        | Дорога весны
+                    .col 
+                      p
+                        | В тумане вся река.
+                        br
+                        | Куда же теперь плыть?
+                        br
+                        | Голос птицы в тишине
+                    .col 
+                      p 
+                        | Вишни цвет расцвел в душе,
+                        br
+                        | Не смотря на снег.
+                        br
+                        | За окном уже весна
+                    .col-2
+                .carousel-item
+                  .row
+                    .col-2
+                    .col 
+                      p 
+                        | Темный небосвод.
+                        br
+                        | Уплывают облака.
+                        br
+                        | Зонтик от дождя
+                    .col 
+                      p 
+                        | Сумерки в душе.
+                        br
+                        | Бесконечный мыслей ход.
+                        br
+                        | Снова дождь
+                    .col 
+                      p
+                        | Души снегом скованы
+                        br
+                        | Где живет любовь?
+                        br
+                        | Мы забыли туда путь
+                    .col 
+                      p
+                        | Середина февраля.
+                        br
+                        | Рождение солнца
+                        br
+                        | С улыбкой на устах
+                    .col-2
+                .carousel-item
+                  .row 
+                    .col-2
+                    .col 
+                      p 
+                        | Не оглядывайся,
+                        br
+                        | Нить Ариадны исчезнет.
+                        br
+                        | Плачущая луна.
+                    .col
+                      p 
+                        | Подожди, я с тобою,
+                        br
+                        | Ветра дух и шелест листвы.
+                        br
+                        | Улетаю
+                    .col
+                      p 
+                        | Отпусти — отпускаю.
+                        br
+                        | Дождь смывает последние слезы.
+                        br
+                        | Прости и прощай
+                    .col
+                      p 
+                        | Принятие…
+                        br
+                        | Подожди, я с тобой попрощаюсь.
+                        br
+                        | Эхо в пустоте
+                    .col-2
 
-        .row.section-poetry-row
-          .col-1
-          .col-2
-            p
-              | И пока я не ушел,
-              | Дай сказать прости.
-              | Ты закрыла дверь...
-          .col-2
-            p
-              | За окном пурга —
-              | Зиме никак не уйти.
-              | Мир теперь во льду
-          .col-2
-            p
-              | Снова возвращаюсь
-              | Ни душой, ни телом, ни умом.
-              | Город печали
-          .col-2
-            p
-              | Вечный дождь.
-              | Вот дорога предо мной.
-              | Снова дома я
-          .col-2
-            p
-              | Восход солнца,
-              | Где далекий горизонт.
-              | Забери меня
-          .col-1
+              a(class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev")
+                span(class="carousel-control-prev-icon" aria-hidden="true")
+                span(class="sr-only") Previous
+              a(class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next")
+                span(class="carousel-control-next-icon" aria-hidden="true")
+                span(class="sr-only") Next
 
-        .row.section-poetry-row
-          .col-1
-          .col-2
-            p
-              | Открыты двери.
-              | Отступает прочь зима —
-              | Дорога весны
-          .col-2
-            p
-              | В тумане вся река.
-              | Куда же теперь плыть?
-              | Голос птицы в тишине
-          .col-2
-            p
-              | Вишни цвет расцвел в душе,
-              | Не смотря на снег.
-              | За окном уже весна
-          .col-2
-            p
-              | Темный небосвод.
-              | Уплывают облака.
-              | Зонтик от дождя
-          .col-2
-            p
-              | Сумерки в душе.
-              | Бесконечный мыслей ход.
-              | Снова дождь
-          .col-1
+          //- .row.section-poetry-row
+          //-   .col-1
+          //-   .col-2
+          //-     p
+          //-       | И пока я не ушел,
+          //-       | Дай сказать прости.
+          //-       | Ты закрыла дверь...
+          //-   .col-2
+          //-     p
+          //-       | За окном пурга —
+          //-       | Зиме никак не уйти.
+          //-       | Мир теперь во льду
+          //-   .col-2
+          //-     p
+          //-       | Снова возвращаюсь
+          //-       | Ни душой, ни телом, ни умом.
+          //-       | Город печали
+          //-   .col-2
+          //-     p
+          //-       | Вечный дождь.
+          //-       | Вот дорога предо мной.
+          //-       | Снова дома я
+          //-   .col-2
+          //-     p
+          //-       | Восход солнца,
+          //-       | Где далекий горизонт.
+          //-       | Забери меня
+          //-   .col-1
 
-        .row.section-poetry-row
-          .col-2
-          .col-2
-            p
-              | Души снегом скованы
-              | Где живет любовь?
-              | Мы забыли туда путь
-          .col-2
-            p
-              | Середина февраля.
-              | Рождение солнца
-              | С улыбкой на устах
-          .col-2
-            p
-              | Не оглядывайся,
-              | Нить Ариадны исчезнет.
-              | Плачущая луна
-          .col-2
-            p
-              | Подожди, я с тобою,
-              | Ветра дух и шелест листвы.
-              | Улетаю
-          .col-2
+          //- .row.section-poetry-row
+          //-   .col-1
+          //-   .col-2
+          //-     p
+          //-       | Открыты двери.
+          //-       | Отступает прочь зима —
+          //-       | Дорога весны
+          //-   .col-2
+          //-     p
+          //-       | В тумане вся река.
+          //-       | Куда же теперь плыть?
+          //-       | Голос птицы в тишине
+          //-   .col-2
+          //-     p
+          //-       | Вишни цвет расцвел в душе,
+          //-       | Не смотря на снег.
+          //-       | За окном уже весна
+          //-   .col-2
+          //-     p
+          //-       | Темный небосвод.
+          //-       | Уплывают облака.
+          //-       | Зонтик от дождя
+          //-   .col-2
+          //-     p
+          //-       | Сумерки в душе.
+          //-       | Бесконечный мыслей ход.
+          //-       | Снова дождь
+          //-   .col-1
 
-        .row.section-poetry-row
-          .col-4
-          .col-2
-            p
-              | Отпусти — отпускаю.
-              | Дождь смывает последние слезы.
-              | Прости и прощай
-          .col-2
-            p
-              | Принятие…
-              | Подожди, я с тобой попрощаюсь.
-              | Эхо в пустоте
-          .col-4
+          //- .row.section-poetry-row
+          //-   .col-2
+          //-   .col-2
+          //-     p
+          //-       | Души снегом скованы
+          //-       | Где живет любовь?
+          //-       | Мы забыли туда путь
+          //-   .col-2
+          //-     p
+          //-       | Середина февраля.
+          //-       | Рождение солнца
+          //-       | С улыбкой на устах
+          //-   .col-2
+          //-     p
+          //-       | Не оглядывайся,
+          //-       | Нить Ариадны исчезнет.
+          //-       | Плачущая луна
+          //-   .col-2
+          //-     p
+          //-       | Подожди, я с тобою,
+          //-       | Ветра дух и шелест листвы.
+          //-       | Улетаю
+          //-   .col-2
+
+          //- .row.section-poetry-row
+          //-   .col-4
+          //-   .col-2
+          //-     p
+          //-       | Отпусти — отпускаю.
+          //-       | Дождь смывает последние слезы.
+          //-       | Прости и прощай
+          //-   .col-2
+          //-     p
+          //-       | Принятие…
+          //-       | Подожди, я с тобой попрощаюсь.
+          //-       | Эхо в пустоте
+          //-   .col-4
 
       .row 
         include includes/index-footer
+
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous")
