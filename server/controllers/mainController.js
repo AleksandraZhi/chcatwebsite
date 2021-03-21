@@ -46,11 +46,11 @@ exports.novelsPage = async (req, res) => {
 exports.shortsPage = async (req, res) => {
 	try {
 		const currentShortStorySlug = req.params.storyTitle
-		const text = await ShortStory.findOne({
+		const currentShortStoryObj = await ShortStory.findOne({
 			slug: `${currentShortStorySlug}`,
 		}).exec()
-		const title = util.format(text.title)
-		const pathToText = `${util.format(text.pathToText)}_${
+		const title = util.format(currentShortStoryObj.title)
+		const pathToText = `${util.format(currentShortStoryObj.pathToText)}_${
 			currentShortStorySlug.split('-').join('_') + '.txt'
 		}`
 		const storyText = fs.readFileSync(path.join(__dirname, pathToText), 'utf-8')
