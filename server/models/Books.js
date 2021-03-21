@@ -15,4 +15,16 @@ const novelChapterSchema = new mongoose.Schema(
 	}
 )
 
+const shortStorySchema = new mongoose.Schema(
+	{
+		title: String,
+		pathToText: String,
+		slug: String,
+	},
+	{
+		collection: 'short-stories',
+	}
+)
+
 module.exports = mongoose.model('Novel', novelChapterSchema)
+module.exports = mongoose.model('ShortStory', shortStorySchema)
