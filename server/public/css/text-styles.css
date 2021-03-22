@@ -2,10 +2,21 @@
 /* BASIC SETUP */
 /*------------------------------*/
 
+html,
+body,
 .container-fluid,
 .navigation-bar,
 .section-footer {
 	background-color: rgb(5, 2, 11);
+}
+
+* {
+	font-family: sans-serif;
+}
+
+h2,
+p {
+	font-family: 'Garamond', serif;
 }
 
 /* REUSABLE COMPONENTS */
@@ -15,10 +26,14 @@ h2,
 h3,
 h4,
 p,
-.navigation-bar a,
 i,
 .section-footer {
-	color: rgba(206, 177, 143);
+	color: rgb(206, 177, 143);
+}
+
+.navigation-bar a,
+footer p {
+	color: rgba(206, 177, 143, 0.8);
 }
 
 i {
@@ -31,7 +46,7 @@ h2 {
 }
 
 p {
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	text-align: justify;
 	margin-bottom: 0rem;
 }
@@ -48,6 +63,10 @@ p {
 }
 
 /* BUTTONS */
+
+a.btn-active {
+	background-color: rgba(206, 177, 143, 0.2);
+}
 
 .chapter-nav {
 	text-align: center;
@@ -123,7 +142,7 @@ a,
 .btn-group .btn:active,
 .btn-group .btn:hover {
 	background-color: rgba(206, 177, 143, 0.2);
-	border: rgb(206, 177, 143);
+	border: rgb(206, 177, 143) 1px solid;
 	transition: background-color 0.3s;
 }
 
@@ -133,6 +152,7 @@ a,
 	width: 100%;
 	background-color: rgba(5, 2, 11);
 }
+
 
 .navigation-bar li {
 	display: inline-block;

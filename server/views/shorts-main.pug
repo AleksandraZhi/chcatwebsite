@@ -1,0 +1,16 @@
+extend text-layout
+
+block content
+  .container-fluid.content
+    .row.section-title
+      .col
+        h2 #{title}
+    .row.section-chapter-text
+      .col
+        -  const textArray = storyText.split('\n')
+        each paragraph in textArray
+          p #{paragraph}
+    .row.section-chapter-nav
+        .col.back
+            - const url = `/short-stories/${currentShortStorySlug}`
+            a(class="btn btn-outline-dark", href=url) наверх
