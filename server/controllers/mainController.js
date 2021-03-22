@@ -38,7 +38,7 @@ exports.novelsPage = async (req, res) => {
 			copyrightYear,
 			totalChapters,
 		})
-	} catch {
+	} catch (err) {
 		err => console.log(err)
 	}
 }
