@@ -38,7 +38,8 @@ block content
               when totalChapters
                 .btn-group
                   a(class="btn btn-outline-dark prev" href=prevChapterURL) Предыдущая глава
-                   - currentChapterURL = `${url}/${currentChapter}`
+                  while currentChapter <= totalChapters
+                    - currentChapterURL = `${url}/${currentChapter}`
                     if currentChapter == chapterNumber 
                       a(class="btn btn-outline-dark btn-active" href=currentChapterURL) #{currentChapter++}
                     else

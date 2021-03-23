@@ -19,6 +19,15 @@ body,
 	background-color: rgb(5, 2, 11);
 }
 
+* {
+	font-family: sans-serif;
+}
+
+h2,
+p {
+	font-family: 'Garamond', serif;
+}
+
 /* REUSABLE COMPONENTS */
 
 h1,
@@ -26,10 +35,14 @@ h2,
 h3,
 h4,
 p,
-.navigation-bar a,
 i,
 .section-footer {
-	color: rgba(206, 177, 143);
+	color: rgb(206, 177, 143);
+}
+
+.navigation-bar a,
+footer p {
+	color: rgba(206, 177, 143, 0.8);
 }
 
 i {
@@ -42,7 +55,7 @@ h2 {
 }
 
 p {
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	text-align: justify;
 	margin-bottom: 0rem;
 }
@@ -59,6 +72,10 @@ p {
 }
 
 /* BUTTONS */
+
+a.btn-active {
+	background-color: rgba(206, 177, 143, 0.2);
+}
 
 .chapter-nav {
 	text-align: center;
