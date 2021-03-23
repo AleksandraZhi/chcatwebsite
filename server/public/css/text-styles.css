@@ -2,6 +2,17 @@
 /* BASIC SETUP */
 /*------------------------------*/
 
+* {
+	font-family: sans-serif;
+}
+
+h2,
+p {
+	font-family: 'Garamond', serif;
+}
+
+html,
+body,
 .container-fluid,
 .navigation-bar,
 .section-footer {
@@ -114,7 +125,7 @@ a,
 .back .btn:active,
 .btn-group .btn:hover,
 .btn-group .btn:active {
-	color: rgba(153, 212, 176);
+	color: rgb(153, 212, 176);
 	transition: color 0.3s;
 }
 
@@ -123,8 +134,12 @@ a,
 .btn-group .btn:active,
 .btn-group .btn:hover {
 	background-color: rgba(206, 177, 143, 0.2);
-	border: rgb(206, 177, 143);
 	transition: background-color 0.3s;
+	border: rgb(206, 177, 143) 1px solid;
+}
+
+a.btn-active {
+	background-color: rgba(206, 177, 143, 0.2);
 }
 
 /* SECTION HEADER */

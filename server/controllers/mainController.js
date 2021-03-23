@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Novel = mongoose.model('Novel')
+const ShortStory = mongoose.model('ShortStory')
 const path = require('path')
 const fs = require('fs')
 const util = require('util')
@@ -12,13 +13,14 @@ exports.mainPage = (req, res) => {
 
 exports.novelsPage = async (req, res) => {
 	try {
+		const currentNovelSlug = req.params.novelTitle
 		const currentChapterNr = parseInt(req.params.chapterNr)
 		const text = await Novel.findOne({
-			title: 'Рокзвезда',
-			chapter: `${currentChapterNr}`,
+			slug: `${currentNovelSlug}`,
+			chapter: { $regex: '^' + currentChapterNr, $options: 'i' },
 		}).exec()
 		const totalChapters = await Novel.countDocuments({
-			title: 'Рокзвезда',
+			slug: `${currentNovelSlug}`,
 		})
 		const title = util.format(text.title)
 		const chapter = util.format(text.chapter)
@@ -31,11 +33,35 @@ exports.novelsPage = async (req, res) => {
 		res.render('../views/novels-main', {
 			title,
 			chapter,
+			currentNovelSlug,
 			chapterText,
 			copyrightYear,
 			totalChapters,
 		})
 	} catch (err) {
+		err => console.log(err)
+	}
+}
+
+exports.shortsPage = async (req, res) => {
+	try {
+		const currentShortStorySlug = req.params.storyTitle
+		const text = await ShortStory.findOne({
+			slug: `${currentShortStorySlug}`,
+		}).exec()
+		const title = util.format(text.title)
+		const pathToText = `${util.format(text.pathToText)}_${
+			currentShortStorySlug.split('-').join('_') + '.txt'
+		}`
+		const storyText = fs.readFileSync(path.join(__dirname, pathToText), 'utf-8')
+		const copyrightYear = year()
+		res.render('../views/shorts-main', {
+			title,
+			storyText,
+			currentShortStorySlug,
+			copyrightYear,
+		})
+	} catch {
 		err => console.log(err)
 	}
 }
