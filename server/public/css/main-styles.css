@@ -419,6 +419,10 @@ header h1:nth-child(2) {
 
 /* SECTION POETRY */
 
+.section-poetry {
+	padding-bottom: 6rem;
+}
+
 .section-poetry p {
 	border: rgb(206, 177, 143) 1px solid;
 	border-radius: 5%;
@@ -427,7 +431,6 @@ header h1:nth-child(2) {
 	font-style: italic;
 	height: 100%;
 }
-
 .section-poetry-row {
 	margin-bottom: 2rem;
 }
