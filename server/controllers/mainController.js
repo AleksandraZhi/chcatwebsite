@@ -33,6 +33,7 @@ exports.novelsPage = async (req, res) => {
 		res.render('../views/novels-main', {
 			title,
 			chapter,
+			currentNovelSlug,
 			chapterText,
 			currentNovelSlug,
 			copyrightYear,
