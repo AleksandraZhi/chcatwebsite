@@ -1,0 +1,25 @@
+.updates-scroll
+    - const arrayOfObjects = [...allNewsArray]
+    each value in arrayOfObjects
+        p.updates-date #{value.date}
+        p.updates-text #{value.text}
+        if (value.link !== '')
+            - const url = `${value.link}`
+            p 
+                a(class="link-to" href=url) Читать
+
+    //- p.updates-date 16/06/2020
+    //- p.updates-text The website's got revamped! Check out the new style.
+    //- p.updates-date 11/10/2013
+    //- p.updates-text Update in the Rockstar. The last chapter was rewritten.
+    //- p.updates-date 22/08/2013
+    //- p.updates-text
+    //- | The main character, the rockstar, of the novel finally got
+    //- | a name! Short, strong and sharp.
+    //- p.updates-date 17/07/2013
+    //- p.updates-text
+    //- | A new chapter in the Rockstar is ready. It shows some
+    //- | a name! Short, strong and sharp.
+    //- | backstage magic and reveales the character of the rockstar.
+    //- p
+    //-     a(class="link-to" href="#") Read this chapter

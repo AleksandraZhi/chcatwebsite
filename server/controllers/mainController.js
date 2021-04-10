@@ -5,10 +5,18 @@ const path = require('path')
 const fs = require('fs')
 const util = require('util')
 const year = require('year')
+const News = require('../models/News')
 
-exports.mainPage = (req, res) => {
-	const copyrightYear = year()
-	res.render('../views/index', { copyrightYear })
+exports.mainPage = async (req, res) => {
+	try {
+		const totalNews = await News.countDocuments()
+		const allNewsArray = await News.find()
+		const copyrightYear = year()
+		console.log(allNewsArray, totalNews)
+		res.render('../views/index', { copyrightYear, totalNews, allNewsArray })
+	} catch (err) {
+		err => console.log(err)
+	}
 }
 
 exports.novelsPage = async (req, res) => {
