@@ -3,7 +3,7 @@
     each value in arrayOfObjects
         p.updates-date #{value.date}
         p.updates-text #{value.text}
-        if (value.link !== '')
+        if (value.link)
             - const url = `${value.link}`
             p 
                 a(class="link-to" href=url) Читать

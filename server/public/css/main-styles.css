@@ -339,6 +339,29 @@ header h1:nth-child(2) {
 	background-image: url(../img/cover-broken-hearts.jpg);
 }
 
+@media screen and (max-width: 1300px) {
+	.section-novels h3 {
+		font-size: 1.1rem;
+	}
+
+	.link-to {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 1188px) {
+	.section-novels h3 {
+		font-size: 1rem;
+	}
+
+	.section-novels p {
+		font-size: 0.85rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+}
+
 /* SECTION SHORT STORIES */
 
 .section-shorts {

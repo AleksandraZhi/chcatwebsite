@@ -12,7 +12,6 @@ exports.mainPage = async (req, res) => {
 		const totalNews = await News.countDocuments()
 		const allNewsArray = await News.find()
 		const copyrightYear = year()
-		console.log(allNewsArray, totalNews)
 		res.render('../views/index', { copyrightYear, totalNews, allNewsArray })
 	} catch (err) {
 		err => console.log(err)
