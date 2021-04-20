@@ -359,7 +359,14 @@ header h1:nth-child(2) {
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
+	.section-novels h3 {
+		font-size: 1.1rem;
+	}
+
+	.section-novels p {
+		font-size: 1rem;
+	}
 }
 
 /* SECTION SHORT STORIES */
