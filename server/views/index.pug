@@ -1,13 +1,14 @@
 doctype html
-html
+html(lang="en")
   head
     meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 
     title="Ch-Cat.ru"
 
-    link(rel='stylesheet', href='/css/main-styles.css')
+    link(rel="stylesheet" href="/css/main-styles.css")
     link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous")
-    link(rel='stylesheet', href='/fontawesome-free/css/all.css')
+    link(rel="stylesheet" href="/fontawesome-free/css/all.css")
     link(href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,600&family=Inter:wght@100;200;300&display=swap" rel="stylesheet")
 
   body(style="background-color: #000")
@@ -48,7 +49,7 @@ html
                   | кавер версии на музыку известного музыканта. Пока грань
                   | между реальностью и притворством не стала таять...
                 p
-                  a(class="link-to" href="/novels/rockstar/1") Read
+                  a(class="link-to" href="/novels/rockstar/1") Читать
 
           .col-lg-6
             .row
@@ -62,7 +63,7 @@ html
                   | Она - та, кто должна заглядывать в самые темные уголки души,
                   | и этого города, и себя.
                 p
-                  a(class="link-to" href="/novels/dead-city/1") Read
+                  a(class="link-to" href="/novels/dead-city/1") Читать
         .row.section-novels-items
           .col-lg-6
             .row
@@ -75,7 +76,7 @@ html
                   | ты появился и какова твоя цель. Нет никого, похожего на тебя.
                   | Твое сознание начинается с нуля. Как отделить добро от зла...
                 p
-                  a(class="link-to" href="/novels/first-vampire/1") Read
+                  a(class="link-to" href="/novels/first-vampire/1") Читать
 
           .col-lg-6
             .row
@@ -87,7 +88,7 @@ html
                   | разному, но приводят к одному - зияющей боли. 
                   | Посвещается всем страждущим.
                 p
-                  a(class="link-to" href="/novels/broken-hearts/1") Read
+                  a(class="link-to" href="/novels/broken-hearts/1") Читать
 
       .section-shorts#link-to-stories
         .row
@@ -103,7 +104,7 @@ html
                 h3 Ключ к сердцу
                 p Фантазия на тему закрытого сердца
                 p
-                  a(class="link-to" href="/short-stories/key-heart") Read
+                  a(class="link-to" href="/short-stories/key-heart") Читать
           .col-xl-4.col-md-6.col-sm-12
             .row.ticket
               .col.shorts-items.cover-shorts
@@ -111,7 +112,7 @@ html
                 h3 Билет до конца света
                 p О детях и их воображении
                 p
-                  a(class="link-to" href="/short-stories/ticket-world") Read
+                  a(class="link-to" href="/short-stories/ticket-world") Читать
           .col-xl-4.col-md-6.col-sm-12
             .row.walking
               .col.shorts-items.cover-shorts
@@ -119,7 +120,7 @@ html
                 h3 Когда я иду
                 p Мысли на ходу, биты и байты.
                 p
-                  a(class="link-to" href="/short-stories/walking") Read
+                  a(class="link-to" href="/short-stories/walking") Читать
 
           .col-xl-4.col-md-6.col-sm-12
             .row.riga
@@ -128,7 +129,7 @@ html
                 h3 Рига в дожде
                 p Рассказ-настроение о дожде в городе.
                 p
-                  a(class="link-to" href="/short-stories/riga-rain") Read
+                  a(class="link-to" href="/short-stories/riga-rain") Читать
           .col-xl-4.col-md-6.col-sm-12
             .row.divided
               .col.shorts-items.cover-shorts
@@ -137,7 +138,7 @@ html
                 h3 Воедино / Divided
                 p Сцена в диалоге
                 p
-                  a(class="link-to" href="/short-stories/divided") Read
+                  a(class="link-to" href="/short-stories/divided") Читать
           .col-xl-4.col-md-6.col-sm-12
             .row.corner
               .col.shorts-items.cover-shorts
@@ -146,51 +147,51 @@ html
                 h3 Тот, что в углу
                 p Эссе о внутренних страхах.
                 p
-                  a(class="link-to" href="/short-stories/one-in-corner") Read
+                  a(class="link-to" href="/short-stories/one-in-corner") Читать
 
       .section-inspired-articles#link-to-articles
         .row
-          .col-6.title-inspired
-            h2 Stories Inspired by
-          .col-6.title-articles
-            h2 Articles
-
-        .row
-          .col-6.inspired-articles-items
-            .row.inspired-items
-                .col-3
+          .col-lg-6.col-md-12
+            .row
+              .col.title-inspired
+               h2 Stories Inspired by
+            .row.inspired-articles-items.inspired-items 
+              .col-3
                   i.fas.fa-key
-                .col-6
-                  h3 Ключ для Алисы
-                .col-3
-                  h3
-                    a(class="link-to" href="#") Read
-            .row.inspired-items
-                .col-3
-                  i.fas.fa-spider
-                .col-6
-                  h3 Pink Spider
-                .col-3
-                  h3
-                    a(class="link-to" href="#") Read
-          .col-6.inspired-articles-items
-            .row.inspired-items
-                .col-3
-                  i.fas.fa-feather
-                .col-6
-                  h3 О талантах и хобби
-                .col-3
-                  h3
-                    a(class="link-to" href="#") Read
-            .row.inspired-items
-                .col-3
-                  i.fas.fa-feather
-                .col-6
-                  h3 Пишут все, кому не лень?
-                .col-3
-                  h3
-                    a(class="link-to" href="#") Read
+              .col-6
+                h3 Ключ для Алисы
+              .col-3
+                h3
+                  a(class="link-to" href="#") Читать
+            .row.inspired-articles-items.inspired-items 
+              .col-3
+                i.fas.fa-spider
+              .col-6
+                h3 Pink Spider
+              .col-3
+                h3
+                  a(class="link-to" href="#") Читать
 
+          .col-lg-6.col-md-12
+            .row
+              .col.title-articles 
+                h2 Articles
+            .row.inspired-articles-items.inspired-items 
+              .col-3
+                  i.fas.fa-feather
+              .col-6
+                h3 О талантах и хобби
+              .col-3
+                h3
+                  a(class="link-to" href="#") Читать
+            .row.inspired-articles-items.inspired-items 
+              .col-3
+                  i.fas.fa-feather
+              .col-6
+                h3 Пишут все, кому не лень?
+              .col-3
+                h3
+                  a(class="link-to" href="#") Читать
 
       .section-poetry#link-to-poetry
         .row

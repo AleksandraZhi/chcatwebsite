@@ -298,6 +298,20 @@ header h1:nth-child(2) {
 	margin-bottom: 0;
 }
 
+@media screen and (max-width: 700px) {
+	.updates {
+		margin: 3rem 5rem;
+		padding-right: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.updates {
+		margin: 1rem;
+		padding-right: 0.5rem;
+	}
+}
+
 /* SECTION NOVELS */
 
 .section-novels h3 {
@@ -366,6 +380,21 @@ header h1:nth-child(2) {
 
 	.section-novels p {
 		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 682px) {
+	.section-novels {
+		padding: 1.7rem 1rem;
+		padding-top: 2.5rem;
+	}
+
+	.section-novels h3 {
+		font-size: 1rem;
+	}
+
+	.section-novels p {
+		font-size: 0.8rem;
 	}
 }
 
@@ -443,8 +472,15 @@ header h1:nth-child(2) {
 .inspired-items {
 	padding: 1rem;
 	border: rgb(21, 12, 18) solid 1px;
-	border-radius: 43%;
+	border-radius: 15px;
 	text-align: center;
+	margin: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+	.title-articles h2 {
+		padding-top: 3rem;
+	}
 }
 
 /* SECTION POETRY */
@@ -463,6 +499,50 @@ header h1:nth-child(2) {
 }
 .section-poetry-row {
 	margin-bottom: 2rem;
+}
+
+.poetry-carousel {
+	padding-left: 8rem;
+	padding-right: 8rem;
+}
+
+@media screen and (max-width: 1350px) and (min-width: 799px) {
+	.section-poetry p {
+		font-size: 0.9rem;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1196px) and (min-width: 912px) {
+	.section-poetry p {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section-poetry p {
+		font-size: 1.1rem;
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section-poetry p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 576) {
+	.section-poetry p {
+		padding: 0.5rem;
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 663px) {
+	.section-poetry {
+		padding: 1rem;
+	}
 }
 
 /* SECTION FOOTER */

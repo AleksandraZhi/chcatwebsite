@@ -1,16 +1,21 @@
-.navigation-bar.navbar.navbar-expand-md.fixed-top
-    ul.navbar-nav.d-flex.justify-content-around.mr-auto.navigation-bar
-        li.nav-item
-            a(class="nav-link" href="/") Главная
-        li.nav-item
-            a(class="nav-link" href="/#link-to-novels") Романы
-        li.nav-item
-            a(class="nav-link" href="/#link-to-stories") Миниатюры
-        li.nav-item
-            a(class="nav-link" href="/#link-to-articles") По мотивам
-        li.nav-item
-            a(class="nav-link" href="/#link-to-articles") Статьи
-        li.nav-item
-            a(class="nav-link" href="/#link-to-poetry") Хайку
-        li.nav-item
-            a(class="nav-link" href="/#link-to-contacts") Контакты
+nav(class="navigation-bar navbar navbar-expand-sm fixed-top navbar-dark bg-dark")
+    .container-fluid
+        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span(class="navbar-toggler-icon")
+        div(class="collapse navbar-collapse" id="navbarSupportedContent")
+            //- ul.navbar-nav.d-flex.justify-content-around.mr-auto.navigation-bar
+            ul(class="navbar-nav mr-auto")
+                li.nav-item
+                    a(class="nav-link" href="/") Главная
+                li.nav-item
+                    a(class="nav-link" href="/#link-to-novels") Романы
+                li.nav-item
+                    a(class="nav-link" href="/#link-to-stories") Миниатюры
+                li.nav-item
+                    a(class="nav-link" href="/#link-to-articles") По мотивам
+                li.nav-item
+                    a(class="nav-link" href="/#link-to-articles") Статьи
+                li.nav-item
+                    a(class="nav-link" href="/#link-to-poetry") Хайку
+                li.nav-item
+                    a(class="nav-link" href="/#link-to-contacts") Контакты
