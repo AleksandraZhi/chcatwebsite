@@ -1,13 +1,11 @@
 const express = require('express')
-const helmet = require('helmet')
-const mongoose = require('mongoose')
+// const helmet = require('helmet')
 const routes = require('./routes/index')
-const helpers = require('./helpers')
 const path = require('path')
 
 const app = express()
 
-app.use(helmet())
+// app.use(helmet())
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
