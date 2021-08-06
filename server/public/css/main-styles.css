@@ -300,17 +300,10 @@ header h1:nth-child(2) {
 	margin-bottom: 0;
 }
 
-@media screen and (max-width: 700px) {
-	.updates {
-		margin: 3rem 5rem;
-		padding-right: 0.5rem;
-	}
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 	.updates {
 		margin: 1rem;
-		padding-right: 0.5rem;
+		padding: 0.5rem;
 	}
 }
 
@@ -386,7 +379,8 @@ header h1:nth-child(2) {
 }
 
 @media screen and (max-width: 682px) {
-	.section-novels {
+	.section-novels,
+	.section-shorts {
 		padding: 1.7rem 1rem;
 		padding-top: 2.5rem;
 	}
