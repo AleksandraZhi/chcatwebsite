@@ -164,6 +164,7 @@ a.btn-active {
 .navigation-bar {
 	width: 100%;
 	background-color: rgba(5, 2, 11);
+	z-index: 10;
 }
 
 .navigation-bar li {
