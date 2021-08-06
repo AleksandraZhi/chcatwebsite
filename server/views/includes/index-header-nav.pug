@@ -1,21 +1,14 @@
-nav(class="navigation-bar navbar navbar-expand-sm fixed-top navbar-dark bg-dark" role="navigation" aria="navigation")
+nav(class="navigation-bar navbar navbar-expand-md position-fixed" role="navigation" aria="navigation")
     .container-fluid
-        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-            span(class="navbar-toggler-icon")
-        div(class="collapse navbar-collapse" id="navbarSupportedContent")
-            //- ul.navbar-nav.d-flex.justify-content-around.mr-auto.navigation-bar
-            ul(class="navbar-nav mr-auto")
-                li.nav-item
-                    a(class="nav-link" href="/") Главная
-                li.nav-item
-                    a(class="nav-link" href="/#link-to-novels") Романы
-                li.nav-item
-                    a(class="nav-link" href="/#link-to-stories") Миниатюры
-                li.nav-item
-                    a(class="nav-link" href="/#link-to-articles") По мотивам
-                li.nav-item
-                    a(class="nav-link" href="/#link-to-articles") Статьи
-                li.nav-item
-                    a(class="nav-link" href="/#link-to-poetry") Хайку
-                li.nav-item
-                    a(class="nav-link" href="/#link-to-contacts") Контакты
+        button(class="navbar-toggler nav-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation")
+            span
+                i(class="fas fa-bars")
+        div(class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup")
+            div(class="navbar-nav")
+                a(class="nav-item nav-link" href="/") Главная
+                a(class="nav-item nav-link" href="/#link-to-novels") Романы
+                a(class="nav-item nav-link" href="/#link-to-stories") Миниатюры
+                a(class="nav-item nav-link" href="/#link-to-articles") По мотивам
+                a(class="nav-item nav-link" href="/#link-to-articles") Статьи
+                a(class="nav-item nav-link" href="/#link-to-poetry") Хайку
+                a(class="nav-item nav-link" href="/#link-to-contacts") Контакты
