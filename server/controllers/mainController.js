@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
 const Novel = mongoose.model('Novel')
 const ShortStory = mongoose.model('ShortStory')
+const News = mongoose.model('News')
 const path = require('path')
 const fs = require('fs')
 const util = require('util')
 const year = require('year')
-const News = require('../models/News')
 
 exports.mainPage = async (req, res) => {
 	try {
